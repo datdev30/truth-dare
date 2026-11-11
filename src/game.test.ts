@@ -2,10 +2,12 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import {
   buildSession,
+  diceSide,
   eligibleCards,
   isFinished,
   pairCount,
   resolveCard,
+  rollDie,
   selectCard,
   tally,
   type Player,
@@ -116,6 +118,11 @@ describe("deck", () => {
     expect(isFinished(session)).toBe(true);
     expect(tally(session)).toEqual({ done: 3, skip: 2 });
     expect(session.results.map((r) => r.type)).toEqual(["truth", "dare", "truth", "dare", "truth"]);
+  });
+
+  it("rolls 1-6 and maps odd to truth, even to dare", () => {
+    expect([0, 0.17, 0.34, 0.5, 0.67, 0.999].map((r) => rollDie(() => r))).toEqual([1, 2, 3, 4, 5, 6]);
+    expect([1, 2, 3, 4, 5, 6].map(diceSide)).toEqual(["truth", "dare", "truth", "dare", "truth", "dare"]);
   });
 
   it("randomizes the first player", () => {

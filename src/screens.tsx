@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type Dispatch, type PointerEvent, type ReactNode, type SetStateAction } from "react";
 import { CardArt, CategoryMark, SeatMark } from "./card";
 import { avatars, type Copy } from "./copy";
-import type { Pair, Player, Session } from "./game";
+import { diceSide, rollDie, type Pair, type Player, type Session } from "./game";
 import { fanMiddle, fanStep } from "./fan";
 import type { HistoryEntry } from "./history";
 import type { Card, CardType, Category, Difficulty, Locale } from "./schema";
@@ -435,11 +435,13 @@ function audience(card: Card, session: Session, t: Copy) {
 
 function Reveal({
   pair,
+  side,
   session,
   t,
   onResolve,
 }: {
   pair: Pair;
+  side: CardType;
   session: Session;
   t: Copy;
   onResolve: (action: "done" | "skip", choice: CardType) => void;
@@ -449,7 +451,7 @@ function Reveal({
       typeof window !== "undefined" &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches,
   );
-  const [choice, setChoice] = useState<CardType | null>(null);
+  const card = pair[side];
   const cardRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -482,44 +484,28 @@ function Reveal({
           </div>
           <article ref={cardRef} tabIndex={-1} className="face front">
             <CardArt face="front">
-              <div className="ink pair">
-                {(["truth", "dare"] as const).map((type) => {
-                  const card = pair[type];
-                  return (
-                    <button
-                      key={type}
-                      type="button"
-                      className="pair-option"
-                      aria-pressed={choice === type}
-                      onClick={() => setChoice(type)}
-                    >
-                      <span className="flex items-center gap-2 text-sm text-ink">
-                        <span
-                          className={`h-2 w-2 rounded-full ${type === "truth" ? "bg-rose" : "bg-ink"}`}
-                          aria-hidden="true"
-                        />
-                        {t[type]}
-                      </span>
-                      <span className="pair-text font-display">{card.content}</span>
-                      <span className="text-xs text-[#5c5168]">{audience(card, session, t)}</span>
-                    </button>
-                  );
-                })}
+              <div className="ink pair is-single">
+                <div className="pair-option">
+                  <span className="flex items-center gap-2 text-sm text-ink">
+                    <span
+                      className={`h-2 w-2 rounded-full ${side === "truth" ? "bg-rose" : "bg-ink"}`}
+                      aria-hidden="true"
+                    />
+                    {t[side]}
+                  </span>
+                  <span className="pair-text font-display">{card.content}</span>
+                  <span className="text-xs text-[#5c5168]">{audience(card, session, t)}</span>
+                </div>
               </div>
             </CardArt>
           </article>
         </div>
       </div>
       <div className="face-actions ink mt-5 flex flex-col items-center gap-1">
-        <button
-          type="button"
-          className={primary}
-          disabled={!choice}
-          onClick={() => choice && onResolve("done", choice)}
-        >
-          {choice ? t.done : t.choose}
+        <button type="button" className={primary} onClick={() => onResolve("done", side)}>
+          {t.done}
         </button>
-        <button type="button" className={quiet} onClick={() => onResolve("skip", choice ?? "truth")}>
+        <button type="button" className={quiet} onClick={() => onResolve("skip", side)}>
           {t.skip}
         </button>
       </div>
@@ -670,6 +656,70 @@ function Fan({
   );
 }
 
+const pips: Record<number, number[]> = {
+  1: [4],
+  2: [0, 8],
+  3: [0, 4, 8],
+  4: [0, 2, 6, 8],
+  5: [0, 2, 4, 6, 8],
+  6: [0, 2, 3, 5, 6, 8],
+};
+
+// rotateX/rotateY that bring each face to the top, where the roll is read
+const facing: Record<number, [number, number]> = {
+  1: [90, 0],
+  2: [180, 0],
+  3: [90, -90],
+  4: [90, 90],
+  5: [0, 0],
+  6: [-90, 0],
+};
+
+function Dice({
+  face,
+  turns,
+  rolling,
+  label,
+  disabled,
+  onRoll,
+}: {
+  face: number;
+  turns: number;
+  rolling: boolean;
+  label: string;
+  disabled: boolean;
+  onRoll: () => void;
+}) {
+  const [x, y] = facing[face];
+  return (
+    <button
+      type="button"
+      className={rolling ? "dice is-rolling" : "dice"}
+      aria-label={label}
+      disabled={disabled}
+      onClick={onRoll}
+    >
+      <span className="dice-shadow" aria-hidden="true" />
+      <span className="dice-hop" aria-hidden="true">
+        <span className="dice-tilt">
+          <span
+            className="dice-cube"
+            style={{ transform: `rotateX(${x + turns * 360}deg) rotateY(${y + turns * 360}deg)` }}
+          >
+            {[1, 2, 3, 4, 5, 6].map((n) => (
+              <span key={n} className={`dice-face f${n}`}>
+                {Array.from({ length: 9 }, (_, i) => (
+                  <i key={i} className={pips[n].includes(i) ? (n === 1 || n === 4 ? "pip red" : "pip") : ""} />
+                ))}
+              </span>
+            ))}
+          </span>
+        </span>
+      </span>
+    </button>
+  );
+}
+
 export function Board({
   t,
   session,
@@ -690,6 +740,28 @@ export function Board({
   }, []);
   const player = session.players[session.turn];
   const active = session.deck.find((pair) => pair.id === session.activeId) ?? null;
+  const [roll, setRoll] = useState<{ value: number; at: number } | null>(null);
+  const [rolling, setRolling] = useState(false);
+  const [face, setFace] = useState(5);
+  const [turns, setTurns] = useState(0);
+  const rolled = roll?.at === session.results.length ? roll.value : null;
+  const side = rolled ? diceSide(rolled) : null;
+
+  function rollDice() {
+    const value = rollDie();
+    const at = session.results.length;
+    setFace(value);
+    setTurns((n) => n + 2);
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setRoll({ value, at });
+      return;
+    }
+    setRolling(true);
+    window.setTimeout(() => {
+      setRolling(false);
+      setRoll({ value, at });
+    }, 1500);
+  }
   return (
     <Shell>
       {session.results.length === 0 && !active ? (
@@ -713,13 +785,27 @@ export function Board({
         <Reveal
           key={active.id}
           pair={active}
+          side={side ?? "truth"}
           session={session}
           t={t}
           onResolve={onResolve}
         />
       ) : (
         <div className="flex flex-1 flex-col justify-center">
-          <Fan cards={session.deck} pickLabel={t.pickCard} enter={enter} onPick={onPick} />
+          <Fan cards={session.deck} pickLabel={t.pickCard} enter={enter} onPick={(id) => side && onPick(id)} />
+          <div className="mt-8 flex flex-col items-center gap-2">
+            <Dice
+              face={face}
+              turns={turns}
+              rolling={rolling}
+              label={t.roll}
+              disabled={rolling || rolled !== null}
+              onRoll={rollDice}
+            />
+            <p className="min-h-5 text-center text-sm text-mist" aria-live="polite">
+              {side && rolled ? t.rolled(rolled, t[side]) : rolling ? "" : t.rollHint}
+            </p>
+          </div>
         </div>
       )}
     </Shell>

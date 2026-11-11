@@ -84,6 +84,14 @@ export function buildSession(
   };
 }
 
+export function rollDie(rng: () => number = Math.random): number {
+  return 1 + Math.floor(rng() * 6);
+}
+
+export function diceSide(value: number): CardType {
+  return value % 2 === 1 ? "truth" : "dare";
+}
+
 export function selectCard(session: Session, pairId: string): Session {
   if (session.activeId) return session;
   if (!session.deck.some((pair) => pair.id === pairId)) return session;
