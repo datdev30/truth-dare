@@ -464,37 +464,15 @@ button:disabled {
   overflow-wrap: anywhere;
 }
 
-@property --shift {
-  syntax: "<number>";
-  inherits: true;
-  initial-value: 0;
-}
-
-@property --lift {
-  syntax: "<length>";
-  inherits: true;
-  initial-value: 0px;
-}
-
 .fan {
-  --shift: 0;
-  --lift: 0px;
   position: relative;
   height: 17rem;
   margin-top: 0.5rem;
   touch-action: none;
   outline: none;
-  transition:
-    --shift 0.42s cubic-bezier(0.16, 0.84, 0.32, 1),
-    --lift 0.28s ease;
-}
-
-.fan.is-drag {
-  transition: none;
 }
 
 .fan-card {
-  --d: calc(var(--i) - var(--shift));
   position: absolute;
   left: 50%;
   bottom: 1.4rem;
@@ -504,15 +482,14 @@ button:disabled {
   border: 0;
   background: transparent;
   transform-origin: 50% 130%;
-  transform: translate3d(
-      calc(var(--d) * 18px),
-      calc(abs(var(--d)) * 8px - (1 - min(abs(var(--d)), 1)) * (34px + var(--lift))),
-      0
-    )
-    rotate(calc(var(--d) * 5.5deg)) scale(calc(1.08 - 0.14 * min(abs(var(--d)), 1)));
-  z-index: calc(240 - abs(var(--d)) * 2);
-  opacity: clamp(0, 9 - abs(var(--d)), 1);
-  will-change: transform;
+  transition:
+    transform 0.42s cubic-bezier(0.16, 0.84, 0.32, 1),
+    opacity 0.42s ease;
+  will-change: transform, opacity;
+}
+
+.fan.is-drag .fan-card {
+  transition: none;
 }
 
 .fan.is-dealing {

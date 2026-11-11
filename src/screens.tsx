@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type 
 import { CardArt, CategoryMark, SeatMark } from "./card";
 import { avatars, type Copy } from "./copy";
 import { diceSide, rollDie, type Pair, type Player, type Session } from "./game";
-import { fanMiddle, fanStep } from "./fan";
+import { fanMiddle, fanPose, fanStep } from "./fan";
 import type { HistoryEntry } from "./history";
 import type { Card, CardType, Category, Difficulty, Locale } from "./schema";
 
@@ -540,8 +540,10 @@ function Fan({
     if (!el) return;
     el.classList.toggle("is-drag", !animate);
     if (animate) void el.offsetWidth;
-    el.style.setProperty("--shift", String(shift));
-    el.style.setProperty("--lift", `${lift}px`);
+    // per-card transforms stay on the compositor; an inherited custom property on .fan restyles every SVG node
+    for (const card of el.children as HTMLCollectionOf<HTMLElement>) {
+      Object.assign(card.style, fanPose(Number(card.dataset.i) - shift, lift));
+    }
   }
 
   function settle(next: number) {
@@ -592,10 +594,9 @@ function Fan({
       let shift = indexRef.current - g.dx / 72;
       if (shift < 0) shift *= 0.35;
       else if (shift > max) shift = max + (shift - max) * 0.35;
-      el.style.setProperty("--shift", String(shift));
-      el.style.setProperty("--lift", "0px");
+      place(shift, 0, false);
     } else if (g.axis === "y") {
-      el.style.setProperty("--lift", `${Math.max(0, -g.dy)}px`);
+      place(indexRef.current, Math.max(0, -g.dy), false);
     }
   }
 
@@ -638,20 +639,24 @@ function Fan({
       tabIndex={0}
       aria-label={pickLabel}
     >
-      {cards.map((card, i) => (
-        <button
-          key={card.id}
-          type="button"
-          data-i={i}
-          tabIndex={-1}
-          className="fan-card"
-          aria-current={i === index ? "true" : undefined}
-          aria-label={i === index ? `${pickLabel} ${i + 1}` : undefined}
-          style={{ "--i": i } as CSSProperties}
-        >
-          <CardArt face="back" />
-        </button>
-      ))}
+      {/* cards past ±9 are fully transparent; the extra margin covers one swipe before re-render */}
+      {cards.slice(Math.max(0, index - 16), index + 17).map((card, k) => {
+        const i = Math.max(0, index - 16) + k;
+        return (
+          <button
+            key={card.id}
+            type="button"
+            data-i={i}
+            tabIndex={-1}
+            className="fan-card"
+            aria-current={i === index ? "true" : undefined}
+            aria-label={i === index ? `${pickLabel} ${i + 1}` : undefined}
+            style={{ "--i": i, ...fanPose(i - index) } as CSSProperties}
+          >
+            <CardArt face="back" />
+          </button>
+        );
+      })}
     </div>
   );
 }
