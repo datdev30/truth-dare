@@ -817,7 +817,7 @@ export function Board({
       ) : (
         <div className="flex flex-1 flex-col justify-center">
           <Fan cards={session.deck} pickLabel={t.pickCard} enter={enter} onPick={(id) => side && onPick(id)} />
-          <div className="mt-8 flex flex-col items-center gap-2">
+          <div className="mt-8 flex flex-col items-center">
             <Dice
               face={face}
               turns={turns}
@@ -826,9 +826,6 @@ export function Board({
               disabled={rolling || rolled !== null}
               onRoll={rollDice}
             />
-            <p className="min-h-5 text-center text-sm text-mist" aria-live="polite">
-              {side && rolled ? t.rolled(rolled, t[side]) : rolling ? "" : t.rollHint}
-            </p>
           </div>
         </div>
       )}
