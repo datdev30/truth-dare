@@ -550,9 +550,12 @@ function Fan({
   const cardsRef = useRef(cards);
   cardsRef.current = cards;
   const gesture = useRef<{ x: number; y: number; axis: "x" | "y" | null; dx: number; dy: number } | null>(null);
-  const [dealing, setDealing] = useState(
-    () => enter && (typeof window === "undefined" || !window.matchMedia("(prefers-reduced-motion: reduce)").matches),
-  );
+  const [shuffle, setShuffle] = useState<"all" | "riffle" | "overhand" | "wash" | null>(() => {
+    if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return null;
+    if (enter) return "all";
+    const kinds = ["riffle", "overhand", "wash"] as const;
+    return kinds[Math.floor(Math.random() * kinds.length)];
+  });
 
   function place(shift: number, lift: number, animate: boolean) {
     const el = fanRef.current;
@@ -579,21 +582,21 @@ function Fan({
   }, [cards.length]);
 
   useEffect(() => {
-    if (!dealing) return;
+    if (!shuffle) return;
     const last = fanRef.current?.querySelector<HTMLElement>(".fan-card:last-child");
     if (!last) return;
-    const stop = () => setDealing(false);
+    const stop = () => setShuffle(null);
     const onEnd = (event: AnimationEvent) => {
-      if (event.animationName !== "shuffle-in") return;
+      if (!event.animationName.startsWith("shuffle-")) return;
       stop();
     };
     last.addEventListener("animationend", onEnd);
-    const timer = window.setTimeout(stop, 6000);
+    const timer = window.setTimeout(stop, shuffle === "all" ? 6000 : 2500);
     return () => {
       last.removeEventListener("animationend", onEnd);
       window.clearTimeout(timer);
     };
-  }, [dealing]);
+  }, [shuffle]);
 
   function onPointerDown(event: PointerEvent<HTMLDivElement>) {
     gesture.current = { x: event.clientX, y: event.clientY, axis: null, dx: 0, dy: 0 };
@@ -638,7 +641,7 @@ function Fan({
   return (
     <div
       ref={fanRef}
-      className={dealing ? "fan is-dealing" : "fan"}
+      className={shuffle ? `fan is-dealing shuffle-${shuffle}` : "fan"}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}

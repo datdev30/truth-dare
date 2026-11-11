@@ -504,8 +504,27 @@ button:disabled {
 }
 
 .fan.is-dealing .fan-card {
-  animation: shuffle-in 4.2s linear both;
+  animation-duration: 1.4s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
   animation-delay: calc(var(--i) * 5ms);
+}
+
+.fan.shuffle-all .fan-card {
+  animation-name: shuffle-in;
+  animation-duration: 4.2s;
+}
+
+.fan.shuffle-riffle .fan-card {
+  animation-name: shuffle-riffle;
+}
+
+.fan.shuffle-overhand .fan-card {
+  animation-name: shuffle-overhand;
+}
+
+.fan.shuffle-wash .fan-card {
+  animation-name: shuffle-wash;
 }
 
 /* riffle, then overhand, then a table wash; 100% is the fan */
@@ -540,6 +559,59 @@ button:disabled {
     transform: translate3d(62px, calc(14px + (var(--i) - (var(--n) - 1) / 2) * -2.2px), 0) rotate(13deg) scale(0.94);
   }
   88% {
+    transform: translate3d(
+        calc((var(--i) - (var(--n) - 1) / 2) * 14px),
+        calc((mod(var(--i), 3) - 1) * 14px),
+        0
+      )
+      rotate(calc((mod(var(--i), 2) - 0.5) * 16deg)) scale(0.88);
+  }
+}
+
+@keyframes shuffle-riffle {
+  0%,
+  12% {
+    transform: translate3d(calc((var(--i) - (var(--n) - 1) / 2) * 1.3px), 18px, 0)
+      rotate(calc((var(--i) - (var(--n) - 1) / 2) * 0.5deg)) scale(0.9);
+  }
+  38% {
+    transform: translate3d(
+        calc(sign(var(--i) - (var(--n) - 1) / 2) * 76px + (var(--i) - (var(--n) - 1) / 2) * 1.5px),
+        -22px,
+        0
+      )
+      rotate(calc(sign(var(--i) - (var(--n) - 1) / 2) * 13deg)) scale(0.95);
+  }
+  58%,
+  74% {
+    transform: translate3d(calc(sign(var(--i) - (var(--n) - 1) / 2) * -34px), calc((mod(var(--i), 2) - 0.5) * 30px), 0)
+      rotate(calc(sign(var(--i) - (var(--n) - 1) / 2) * -7deg)) scale(0.97);
+  }
+}
+
+@keyframes shuffle-overhand {
+  0%,
+  12% {
+    transform: translate3d(calc((var(--i) - (var(--n) - 1) / 2) * 1.3px), 18px, 0)
+      rotate(calc((var(--i) - (var(--n) - 1) / 2) * 0.5deg)) scale(0.9);
+  }
+  40% {
+    transform: translate3d(-68px, calc(-58px + (var(--i) - (var(--n) - 1) / 2) * 2.6px), 0) rotate(-16deg) scale(0.92);
+  }
+  62%,
+  78% {
+    transform: translate3d(62px, calc(14px + (var(--i) - (var(--n) - 1) / 2) * -2.2px), 0) rotate(13deg) scale(0.94);
+  }
+}
+
+@keyframes shuffle-wash {
+  0%,
+  16% {
+    transform: translate3d(calc((var(--i) - (var(--n) - 1) / 2) * 1.3px), 18px, 0)
+      rotate(calc((var(--i) - (var(--n) - 1) / 2) * 0.5deg)) scale(0.9);
+  }
+  48%,
+  70% {
     transform: translate3d(
         calc((var(--i) - (var(--n) - 1) / 2) * 14px),
         calc((mod(var(--i), 3) - 1) * 14px),
