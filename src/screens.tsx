@@ -461,7 +461,7 @@ function Reveal({
       return;
     }
     setTearing(true);
-    window.setTimeout(() => onResolve("skip", side), 900);
+    window.setTimeout(() => onResolve("skip", side), 1500);
   }
 
   const front = (
