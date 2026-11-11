@@ -504,19 +504,48 @@ button:disabled {
 }
 
 .fan.is-dealing .fan-card {
-  animation: shuffle-in 3s ease-in-out both;
-  animation-delay: calc(var(--i) / var(--n) * 480ms);
+  animation: shuffle-in 4.2s linear both;
+  animation-delay: calc(var(--i) * 5ms);
 }
 
+/* riffle, then overhand, then a table wash; 100% is the fan */
 @keyframes shuffle-in {
   0%,
-  18% {
-    transform: translate3d(calc((var(--i) - (var(--n) - 1) / 2) * 2px), 56px, 0) rotate(calc((var(--i) - (var(--n) - 1) / 2) * 2deg)) scale(0.88);
+  7%,
+  39%,
+  43%,
+  73%,
+  77% {
+    transform: translate3d(calc((var(--i) - (var(--n) - 1) / 2) * 1.3px), 18px, 0)
+      rotate(calc((var(--i) - (var(--n) - 1) / 2) * 0.5deg)) scale(0.9);
   }
-  46%,
-  70% {
-    transform: translate3d(calc((var(--i) - (var(--n) - 1) / 2) * -11px), 4px, 0)
-      rotate(calc((var(--i) - (var(--n) - 1) / 2) * -3.2deg)) scale(0.96);
+  18% {
+    transform: translate3d(
+        calc(sign(var(--i) - (var(--n) - 1) / 2) * 76px + (var(--i) - (var(--n) - 1) / 2) * 1.5px),
+        -22px,
+        0
+      )
+      rotate(calc(sign(var(--i) - (var(--n) - 1) / 2) * 13deg)) scale(0.95);
+  }
+  26%,
+  32% {
+    transform: translate3d(calc(sign(var(--i) - (var(--n) - 1) / 2) * -34px), calc((mod(var(--i), 2) - 0.5) * 30px), 0)
+      rotate(calc(sign(var(--i) - (var(--n) - 1) / 2) * -7deg)) scale(0.97);
+  }
+  52% {
+    transform: translate3d(-68px, calc(-58px + (var(--i) - (var(--n) - 1) / 2) * 2.6px), 0) rotate(-16deg) scale(0.92);
+  }
+  60%,
+  66% {
+    transform: translate3d(62px, calc(14px + (var(--i) - (var(--n) - 1) / 2) * -2.2px), 0) rotate(13deg) scale(0.94);
+  }
+  88% {
+    transform: translate3d(
+        calc((var(--i) - (var(--n) - 1) / 2) * 14px),
+        calc((mod(var(--i), 3) - 1) * 14px),
+        0
+      )
+      rotate(calc((mod(var(--i), 2) - 0.5) * 16deg)) scale(0.88);
   }
 }
 

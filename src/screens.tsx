@@ -588,7 +588,7 @@ function Fan({
       stop();
     };
     last.addEventListener("animationend", onEnd);
-    const timer = window.setTimeout(stop, 4600);
+    const timer = window.setTimeout(stop, 6000);
     return () => {
       last.removeEventListener("animationend", onEnd);
       window.clearTimeout(timer);
