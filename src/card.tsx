@@ -118,6 +118,55 @@ export function CategoryMark({ id }: { id: string }) {
   );
 }
 
+const SPARK = "M0 -6l1.6 4.4 4.4 1.6-4.4 1.6-1.6 4.4-1.6-4.4-4.4-1.6 4.4-1.6z";
+
+export function SideMark({ side, label }: { side: "truth" | "dare"; label: string }) {
+  const id = useId().replace(/:/g, "");
+  const [light, deep, fold] = side === "truth" ? ["#f27aa1", "#c43b66", "#9e2a52"] : ["#7a3d63", "#3d2430", "#24131c"];
+  return (
+    <svg className="side-mark" viewBox="0 0 200 58" role="img" aria-label={label}>
+      <defs>
+        <linearGradient id={`band${id}`} x1="0" y1="6" x2="0" y2="44" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor={light} />
+          <stop offset="1" stopColor={deep} />
+        </linearGradient>
+      </defs>
+      <path d="M2 20H40V52H2L13 36Z" fill={deep} />
+      <path d="M198 20H160V52H198L187 36Z" fill={deep} />
+      <path d="M28 44H40V52Z" fill={fold} />
+      <path d="M172 44H160V52Z" fill={fold} />
+      <rect x="22" y="9" width="156" height="38" rx="9" fill={fold} opacity="0.35" />
+      <rect x="22" y="6" width="156" height="38" rx="9" fill={`url(#band${id})`} />
+      <rect
+        x="27.5"
+        y="11.5"
+        width="145"
+        height="27"
+        rx="5.5"
+        fill="none"
+        stroke="#fff"
+        strokeOpacity="0.55"
+        strokeWidth="1"
+        strokeDasharray="3 2.5"
+      />
+      <path d={SPARK} transform="translate(38 25)" fill="#fff" opacity="0.9" />
+      <path d={SPARK} transform="translate(162 25)" fill="#fff" opacity="0.9" />
+      <text
+        x="101.5"
+        y="32.5"
+        textAnchor="middle"
+        fill="#fff"
+        fontFamily="Fraunces, Georgia, serif"
+        fontWeight="700"
+        fontSize="20"
+        letterSpacing="3"
+      >
+        {side === "truth" ? "TRUTH" : "DARE"}
+      </text>
+    </svg>
+  );
+}
+
 export function SeatMark({ emoji }: { emoji: string }) {
   const id = useId().replace(/:/g, "");
   return (

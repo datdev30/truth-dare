@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type Dispatch, type PointerEvent, type ReactNode, type SetStateAction } from "react";
-import { CardArt, CategoryMark, SeatMark } from "./card";
+import { CardArt, CategoryMark, SeatMark, SideMark } from "./card";
 import { avatars, type Copy } from "./copy";
 import { diceSide, rollDie, type Pair, type Player, type Session } from "./game";
 import { fanMiddle, fanPose, fanStep } from "./fan";
@@ -453,6 +453,28 @@ function Reveal({
   );
   const card = pair[side];
   const cardRef = useRef<HTMLElement>(null);
+  const [tearing, setTearing] = useState(false);
+
+  function skip() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      onResolve("skip", side);
+      return;
+    }
+    setTearing(true);
+    window.setTimeout(() => onResolve("skip", side), 900);
+  }
+
+  const front = (
+    <CardArt face="front">
+      <div className="ink pair is-single">
+        <SideMark side={side} label={t[side]} />
+        <div className="pair-option">
+          <span className="pair-text font-display">{card.content}</span>
+        </div>
+        <span className="text-center text-xs text-[#5c5168]">{audience(card, session, t)}</span>
+      </div>
+    </CardArt>
+  );
 
   useEffect(() => {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -477,35 +499,32 @@ function Reveal({
 
   return (
     <div className="mt-6 flex flex-1 flex-col">
-      <div className="flip">
-        <div className={`flip-inner ${face ? "is-flipped" : ""}`}>
-          <div className="face" aria-hidden="true">
-            <CardArt face="back" />
+      {tearing ? (
+        <div className="flip is-tearing" aria-hidden="true">
+          <div className="tear-half tear-left">
+            <div className="tear-paper">{front}</div>
           </div>
-          <article ref={cardRef} tabIndex={-1} className="face front">
-            <CardArt face="front">
-              <div className="ink pair is-single">
-                <div className="pair-option">
-                  <span className="flex items-center gap-2 text-sm text-ink">
-                    <span
-                      className={`h-2 w-2 rounded-full ${side === "truth" ? "bg-rose" : "bg-ink"}`}
-                      aria-hidden="true"
-                    />
-                    {t[side]}
-                  </span>
-                  <span className="pair-text font-display">{card.content}</span>
-                  <span className="text-xs text-[#5c5168]">{audience(card, session, t)}</span>
-                </div>
-              </div>
-            </CardArt>
-          </article>
+          <div className="tear-half tear-right">
+            <div className="tear-paper">{front}</div>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="flip">
+          <div className={`flip-inner ${face ? "is-flipped" : ""}`}>
+            <div className="face" aria-hidden="true">
+              <CardArt face="back" />
+            </div>
+            <article ref={cardRef} tabIndex={-1} className="face front">
+              {front}
+            </article>
+          </div>
+        </div>
+      )}
       <div className="face-actions ink mt-5 flex flex-col items-center gap-1">
-        <button type="button" className={primary} onClick={() => onResolve("done", side)}>
+        <button type="button" className={primary} disabled={tearing} onClick={() => onResolve("done", side)}>
           {t.done}
         </button>
-        <button type="button" className={quiet} onClick={() => onResolve("skip", side)}>
+        <button type="button" className={quiet} disabled={tearing} onClick={skip}>
           {t.skip}
         </button>
       </div>
