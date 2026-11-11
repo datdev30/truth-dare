@@ -1,0 +1,22 @@
+{
+  "categories": [
+    {
+      "id": "romantic",
+      "name": { "vi": "Lãng mạn", "en": "Romantic" },
+      "description": { "vi": "Về hai người", "en": "About the two of you" },
+      "icon": "♥"
+    },
+    {
+      "id": "funny",
+      "name": { "vi": "Vui", "en": "Funny" },
+      "description": { "vi": "Cười một chút", "en": "Something to laugh at" },
+      "icon": "☺"
+    },
+    {
+      "id": "deep",
+      "name": { "vi": "Nói thật", "en": "Deep talk" },
+      "description": { "vi": "Hiểu nhau hơn", "en": "Know each other better" },
+      "icon": "◌"
+    }
+  ]
+}

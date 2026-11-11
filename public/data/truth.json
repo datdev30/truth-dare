@@ -1,0 +1,3614 @@
+{
+  "version": 4,
+  "cards": [
+    {
+      "id": "truth_vi_001",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Ấn tượng đầu tiên của bạn về người kia là gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_002",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Điều gì khiến bạn muốn tìm hiểu người kia nhiều hơn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_003",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Trước khi gặp, bạn đã hình dung người kia là người thế nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_004",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Có điều gì ở người kia khác hẳn với những gì bạn nghĩ lúc đầu?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_005",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Lần đầu nói chuyện với người kia, bạn có hồi hộp không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_006",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Tin nhắn nào của người kia khiến bạn mỉm cười lâu nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_007",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bạn để ý điều gì ở người kia đầu tiên: nụ cười, ánh mắt hay giọng nói?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_008",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Từ lúc nào bạn bắt đầu thấy thoải mái khi ở cạnh người kia?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_009",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Nếu dùng ba từ để tả người kia lúc này, bạn chọn những từ nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_010",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bạn đã kể về người kia với ai chưa? Bạn đã nói gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_011",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Điều gì ở người kia khiến bạn tò mò nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_012",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Đã có lúc nào bạn ngồi chờ tin nhắn của người kia chưa?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_013",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Lần gặp nào của hai người mà bạn nhớ nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_014",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bạn nghĩ người kia giống mình ở điểm nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_015",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bạn nghĩ người kia rất khác mình ở điểm nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_016",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Có câu nói nào của người kia khiến bạn suy nghĩ mãi?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_017",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bạn thích nói chuyện với người kia vào lúc nào trong ngày?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_018",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Điều gì khiến bạn đồng ý gặp người kia hôm nay?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_019",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bạn đoán người kia đang nghĩ gì về mình?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_020",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Nếu được hỏi người kia một câu và chắc chắn nhận được câu trả lời thật, bạn sẽ hỏi gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_021",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Món ăn nào bạn có thể ăn mỗi ngày mà không chán?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_022",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Một ngày cuối tuần lý tưởng của bạn trông như thế nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_023",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bạn là người thích dậy sớm hay thức khuya?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_024",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bài hát nào bạn đang nghe đi nghe lại gần đây?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_025",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bộ phim nào bạn có thể xem lại nhiều lần?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_026",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Thói quen kỳ lạ nhất của bạn là gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_027",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bạn có tài lẻ nào ít ai biết không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_028",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Nếu được đi du lịch ngay ngày mai, bạn sẽ đi đâu?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_029",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bạn thích biển hay núi, và vì sao?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_030",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Món đồ nào bạn luôn mang theo bên mình?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_031",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Ứng dụng nào trên điện thoại bạn dùng nhiều nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_032",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bạn thích mèo hay chó hơn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_033",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Lần gần nhất bạn cười đến chảy nước mắt là vì chuyện gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_034",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Hồi nhỏ bạn có biệt danh nào không? Ai đặt cho bạn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_035",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Món ăn nào bạn nấu ngon nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_036",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bạn thích trà, cà phê hay trà sữa?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_037",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Nếu có một ngày không phải làm gì, bạn sẽ làm gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_038",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Điều liều lĩnh nhất bạn từng làm là gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_039",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bạn có nỗi sợ nào buồn cười không, như sợ gián hay sợ độ cao?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_040",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Nếu được chọn một siêu năng lực, bạn sẽ chọn gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_041",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn là người hướng nội hay hướng ngoại?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_042",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Điều gì khiến bạn hạnh phúc nhất trong cuộc sống hiện tại?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_043",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn thường làm gì khi buồn hoặc mệt mỏi?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_044",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Gia đình có ý nghĩa như thế nào với bạn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_045",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Ai là người bạn tin tưởng nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_046",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Kỷ niệm tuổi thơ đẹp nhất của bạn là gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_047",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn tự hào nhất về điều gì ở bản thân?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_048",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn đang cố gắng thay đổi điều gì ở mình?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_049",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn đang theo đuổi mục tiêu gì trong vài năm tới?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_050",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Công việc hoặc việc học hiện tại có khiến bạn vui không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_051",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn cảm thấy mình được trân trọng nhất khi nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_052",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Điều gì dễ làm bạn tổn thương?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_053",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Khi giận, bạn thường phản ứng như thế nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_054",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn cần nhiều hay ít thời gian cho riêng mình?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_055",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Lời khuyên nào bạn từng nhận và nhớ mãi?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_056",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bài học lớn nhất bạn rút ra trong năm qua là gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_057",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Mọi người hay hiểu sai điều gì về bạn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_058",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn từng vượt qua giai đoạn khó khăn nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_059",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Điều gì khiến bạn mất hứng thú với một người nhanh nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_060",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn sẽ mô tả bản thân bằng một câu như thế nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_061",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Với bạn, điều gì quan trọng nhất trong một mối quan hệ?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_062",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn nghĩ gì về sự chung thủy?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_063",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Theo bạn, tôn trọng nhau là như thế nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_064",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Sau này bạn muốn sống ở thành phố hay một nơi yên tĩnh?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_065",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn có muốn kết hôn không? Nếu có, khoảng khi nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_066",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn nghĩ sao về chuyện có con?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_067",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn quản lý tiền bạc theo cách nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_068",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn nghĩ hai người yêu nhau có nên biết mật khẩu điện thoại của nhau không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_069",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn nghĩ sao về tình bạn khác giới khi đã có người yêu?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_070",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Gia đình có ảnh hưởng nhiều đến việc bạn chọn người yêu không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_071",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Khi có mâu thuẫn, bạn muốn nói ra ngay hay cần thời gian bình tĩnh?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_072",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn có tin vào tình yêu sét đánh không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_073",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Điều gì ở người yêu mà bạn không thể chấp nhận?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_074",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Theo bạn, công việc và tình yêu nên cân bằng thế nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_075",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn muốn mình trở thành người như thế nào trong mười năm tới?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_076",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn nghĩ sao về yêu xa?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_077",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Với bạn, ghen thế nào là vừa đủ?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_078",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn sẽ làm gì nếu người yêu và gia đình bất đồng?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_079",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn coi trọng ngoại hình hay tính cách hơn, và vì sao?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_080",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Điều gì khiến bạn tin tưởng một người?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_081",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Mối quan hệ trước đã dạy bạn điều gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_082",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn thể hiện tình cảm bằng lời nói hay bằng hành động nhiều hơn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_083",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn thích được quan tâm theo cách nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_084",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Một buổi hẹn lý tưởng với bạn trông như thế nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_085",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn thích người yêu nhắn tin thường xuyên hay vừa đủ?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_086",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Điều gì khiến bạn rung động trước một người?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_087",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn có dễ mở lòng với người mới không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_088",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Trong tình cảm, bạn thường là người chủ động hay người chờ đợi?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_089",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn nghĩ cần bao lâu để thật sự hiểu một người?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_090",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Bạn cần điều gì để thấy an toàn khi bắt đầu một mối quan hệ?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_091",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Lúc này, bạn cảm thấy thế nào về hai người?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_092",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Điều gì ở người kia khiến bạn muốn tiếp tục tìm hiểu?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_093",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Có điều gì khiến bạn còn lăn tăn khi nghĩ về hai người?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_094",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn mong mối quan hệ này sẽ đi đến đâu?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_095",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn muốn hai người dành thời gian cho nhau theo cách nào nhiều hơn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_096",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Có lúc nào bạn muốn nói điều gì đó với người kia nhưng rồi lại thôi?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_097",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Bạn nghĩ hai người hợp nhau nhất ở điểm nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_098",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Người kia đã làm gì khiến bạn thấy mình đặc biệt?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_099",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nếu người kia ngỏ lời, bạn mong đó là lúc nào và theo cách nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_100",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Ngay lúc này, bạn muốn thật lòng nói gì với người kia?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_001",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "What was your first impression of me?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_002",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "What made you want to get to know me better?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_003",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Before we met, what did you imagine I would be like?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_004",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "What about me is completely different from what you first thought?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_005",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Were you nervous the first time we talked?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_006",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Which of my messages made you smile the longest?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_007",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "What did you notice about me first: my smile, my eyes, or my voice?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_008",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "When did you start to feel comfortable around me?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_009",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "If you had to describe me in three words right now, which would you choose?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_010",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Have you told anyone about me yet? What did you say?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_011",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "What about me makes you most curious?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_012",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Have you ever caught yourself waiting for my message?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_013",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Which of our meetups do you remember most?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_014",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "In what way do you think I'm like you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_015",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "In what way do you think I'm very different from you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_016",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Is there something I said that you keep thinking about?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_017",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "What time of day do you most like talking to me?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_018",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "What made you say yes to meeting me today?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_019",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "What do you guess I think of you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_020",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "If you could ask me one question and be sure of an honest answer, what would it be?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_021",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Which food could you eat every day without getting bored?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_022",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "What does your ideal weekend look like?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_023",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Are you an early bird or a night owl?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_024",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Which song have you had on repeat lately?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_025",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Which film could you watch again and again?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_026",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "What is your strangest habit?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_027",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Do you have a hidden talent few people know about?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_028",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "If you could travel tomorrow, where would you go?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_029",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Beach or mountains, and why?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_030",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "What do you always carry with you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_031",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Which app do you use most on your phone?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_032",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Cats or dogs?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_033",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "When did you last laugh until you cried, and why?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_034",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Did you have a childhood nickname? Who gave it to you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_035",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "What dish do you cook best?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_036",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Tea, coffee, or milk tea?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_037",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "If you had a day with nothing to do, how would you spend it?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_038",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "What is the boldest thing you've ever done?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_039",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Do you have a funny fear, like cockroaches or heights?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_040",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "If you could pick one superpower, what would it be?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_041",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Are you more of an introvert or an extrovert?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_042",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What makes you happiest in your life right now?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_043",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What do you usually do when you're sad or tired?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_044",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What does family mean to you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_045",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Who do you trust most?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_046",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What is your fondest childhood memory?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_047",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What are you proudest of about yourself?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_048",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What are you trying to change about yourself?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_049",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What goal are you working toward in the next few years?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_050",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Does your current work or study make you happy?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_051",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "When do you feel most appreciated?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_052",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What hurts you most easily?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_053",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "How do you usually react when you're angry?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_054",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Do you need a lot of time to yourself, or just a little?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_055",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What advice have you never forgotten?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_056",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What is the biggest lesson you learned this past year?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_057",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What do people often get wrong about you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_058",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What hard period in your life have you come through?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_059",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What makes you lose interest in someone fastest?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_060",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "How would you describe yourself in one sentence?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_061",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "What matters most to you in a relationship?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_062",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "What do you think about faithfulness?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_063",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "To you, what does respecting each other look like?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_064",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "In the future, would you rather live in a city or somewhere quiet?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_065",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Do you want to get married? If so, roughly when?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_066",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "How do you feel about having children?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_067",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "How do you manage money?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_068",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Do you think a couple should know each other's phone passwords?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_069",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "What do you think about close friendships with the opposite sex once you're in a relationship?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_070",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Does your family have a big say in who you date?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_071",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "When there's a conflict, do you want to talk it out right away or take time to cool down?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_072",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Do you believe in love at first sight?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_073",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "What would be a dealbreaker for you in a partner?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_074",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "How do you think work and love should be balanced?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_075",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Who do you want to be ten years from now?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_076",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "What do you think about long-distance relationships?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_077",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "How much jealousy feels right to you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_078",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "What would you do if your partner and your family disagreed?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_079",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Do you value looks or personality more, and why?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_080",
+      "category": "deep",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "What makes you trust someone?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_081",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What did your last relationship teach you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_082",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Do you show affection more through words or through actions?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_083",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "How do you like to be cared for?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_084",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What does an ideal date look like for you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_085",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Do you like a partner who texts often, or just enough?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_086",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What makes your heart flutter for someone?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_087",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Do you open up easily to someone new?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_088",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "In love, are you usually the one who makes the first move or the one who waits?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_089",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "How long do you think it takes to truly know someone?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_090",
+      "category": "romantic",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "What do you need to feel safe at the start of a relationship?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_091",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Right now, how do you feel about the two of us?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_092",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "What about me makes you want to keep getting to know me?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_093",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Is there anything that still makes you hesitate when you think about us?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_094",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Where do you hope this will go?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_095",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "How would you like us to spend more time together?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_096",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Has there been a moment you wanted to tell me something but held back?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_097",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Where do you think we click the most?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_098",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "What have I done that made you feel special?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_099",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "If I asked you to be together, when and how would you hope it happens?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_100",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "What would you honestly like to tell me right now?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_off",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Thẻ này không được chia.",
+      "target": "current_player",
+      "enabled": false
+    },
+    {
+      "id": "truth_vi_101",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Điều gì ở người kia khiến bạn sợ mình sẽ thích họ quá nhiều?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_102",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn đã từng nghĩ về người kia trước khi ngủ chưa? Bạn nghĩ gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_103",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Có điều gì trong quá khứ mà bạn sợ người kia biết?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_104",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn từng bị tổn thương trong tình cảm như thế nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_105",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Điều gì khiến bạn khó tin tưởng hoàn toàn vào một người?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_106",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Lần gần nhất bạn khóc vì chuyện tình cảm là khi nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_107",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có đang giữ khoảng cách với người kia vì lo sợ điều gì không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_108",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nếu hai người không thành, điều bạn tiếc nhất sẽ là gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_109",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn đã thật sự quên được người cũ chưa?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_110",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Người kia đã từng làm bạn chạnh lòng mà bạn chưa nói ra chưa?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_111",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Khi yêu, bạn sợ điều gì nhất ở chính mình?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_112",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn đã từng yêu ai mà không được đáp lại chưa?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_113",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn đã từng phản bội hoặc bị phản bội chưa? Bạn vượt qua thế nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_114",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Điều gì ở người kia khiến bạn muốn trở nên tốt hơn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_115",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Có điều gì bạn muốn người kia thay đổi nhưng ngại nói?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_116",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Lúc này bạn chấm người kia mấy điểm trên mười, và vì sao?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_117",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có ghen khi thấy người kia thân thiết với người khác không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_118",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Điều gì sẽ khiến bạn rời đi ngay lập tức?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_119",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn đã từng nói dối người kia điều gì chưa?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_120",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn nghĩ điều gì ở mình khiến người kia còn lăn tăn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_121",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có muốn người kia trở thành người yêu chính thức của mình không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_122",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn sẽ ngỏ lời với người kia theo cách nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_123",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn mất bao lâu để chắc chắn về cảm xúc của mình?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_124",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Đã có lúc nào bạn nghĩ đến chuyện dừng lại với người kia chưa? Vì sao?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_125",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có đang tìm hiểu ai khác cùng lúc không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_126",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Khi nào bạn muốn ra mắt gia đình người kia?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_127",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Điều gì ở gia đình bạn mà bạn mong người kia hiểu và chấp nhận?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_128",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Điều bạn chưa từng kể với ai nhưng muốn kể với người kia là gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_129",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thấy mình dễ tổn thương nhất khi nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_130",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Khi bạn im lặng, bạn cần người kia làm gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_131",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn đã từng gõ tin nhắn cho người kia rồi xóa đi chưa? Nội dung là gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_132",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có từng mở ảnh người kia ra xem đi xem lại không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_133",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Khoảnh khắc nào bạn thấy người kia thật sự hiểu mình?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_134",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn sợ người kia phát hiện điều gì ở bạn nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_135",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có tin người kia sẽ ở lại khi bạn ở trạng thái tệ nhất không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_136",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Lời hứa nào bạn muốn nghe từ người kia?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_137",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn đã từng mơ thấy người kia chưa? Giấc mơ thế nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_138",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Với bạn, bao lâu thì nên tiến tới chuyện chính thức?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_139",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có sẵn sàng yêu xa với người kia không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_140",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nếu được nói một điều thật lòng nhất với người kia, bạn sẽ nói gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_141",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Trên gương mặt người kia, bạn thấy điểm nào cuốn hút nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_142",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn đã từng tưởng tượng nụ hôn với người kia chưa?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_143",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nụ hôn đầu đời của bạn diễn ra thế nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_144",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thích được hôn ở đâu nhất: môi, má, trán hay cổ?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_145",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thích nụ hôn nhẹ nhàng hay say đắm?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_146",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Lần đầu bạn muốn hôn người kia là khi nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_147",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Người kia cuốn hút nhất trong mắt bạn khi mặc gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_148",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Cử chỉ nào của người kia khiến tim bạn đập nhanh?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_149",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có thích được ôm từ phía sau không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_150",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thích nắm tay đan ngón hay nắm trọn bàn tay?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_151",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Mùi hương nào trên người kia khiến bạn nhớ?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_152",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có ngại thể hiện tình cảm ở nơi đông người không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_153",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thích được chạm nhẹ vào đâu nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_154",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Điều gì khiến bạn thấy an toàn khi gần gũi một người?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_155",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Khi mới tìm hiểu, giới hạn gần gũi của bạn là đến đâu?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_156",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có từng muốn ôm người kia nhưng kìm lại không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_157",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn nghĩ gì về chuyện hôn trong buổi hẹn đầu tiên?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_158",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Giọng người kia lúc nào khiến bạn thấy cuốn hút nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_159",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn muốn người kia gọi mình bằng tên thân mật nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_160",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn muốn một buổi tối riêng tư với người kia diễn ra thế nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_161",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có ngượng khi người kia nhìn mình quá lâu không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_162",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Khoảnh khắc nào bạn thấy hai người gần nhau nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_163",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn muốn được an ủi bằng một cái ôm hay một nụ hôn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_164",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn mong người kia chủ động hơn ở điểm nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_165",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thích được khen về ngoại hình hay tính cách hơn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_166",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn đã từng nhìn trộm người kia lúc họ không để ý chưa?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_167",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thấy đôi môi người kia thế nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_168",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thích cái ôm thật chặt hay thật lâu?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_169",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có thích tựa đầu lên vai người kia không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_170",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Điều gì ở người kia khiến bạn muốn ở gần thêm một chút?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_171",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có thích những tin nhắn ngọt ngào lúc nửa đêm không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_172",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn muốn nụ hôn đầu với người kia diễn ra ở đâu?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_173",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thấy mình cuốn hút nhất ở điểm nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_174",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn đã từng mất ngủ vì nghĩ về người kia chưa?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_175",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Cử chỉ thân mật nào khiến bạn thấy được trân trọng nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_176",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có thích được người kia vuốt tóc không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_177",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn sẽ phản ứng thế nào nếu người kia bất ngờ hôn bạn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_178",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có muốn người kia nắm tay mình khi đi trên phố không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_179",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có tin vào cảm giác \"đúng người\" khi chạm vào nhau không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_180",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Điều gì ở người kia khiến bạn thấy khó cưỡng lại?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_181",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thích được hôn lên má hay lên trán hơn? Vì sao?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_182",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có thích ngồi sát người kia khi xem phim không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_183",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Lúc nào bạn muốn ôm người kia nhất?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_184",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn muốn nghe người kia thì thầm điều gì vào tai?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_185",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có thích được người kia ngắm nhìn không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_186",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn nghĩ người kia hôn có giỏi không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_187",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thích không khí lãng mạn nào: ánh nến, trời mưa hay đêm sao?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_188",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Điều gì khiến bạn ngại ngùng nhất khi ở gần người kia?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_189",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có muốn một lần được người kia ôm ngủ không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_190",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thích những cái chạm bất ngờ hay được báo trước?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_191",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn đã từng muốn nắm tay người kia nhưng không dám chưa?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_192",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Trong mắt bạn, người kia quyến rũ nhất lúc nào?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_193",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thích nụ hôn chào buổi sáng hay chúc ngủ ngon hơn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_194",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn có muốn nụ hôn tiếp theo kéo dài hơn không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_195",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thấy hai người đã sẵn sàng cho nụ hôn đầu chưa?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_196",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Điều gì khiến bạn chùn lại khi muốn tiến gần hơn?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_197",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn muốn người kia chủ động hay muốn mình chủ động?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_198",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Bạn thấy thế nào khi người kia ngồi thật gần?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_199",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Khi chỉ có hai người, bạn muốn người kia làm gì?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_vi_200",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ngay lúc này, bạn có muốn hôn người kia không?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_101",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What about me makes you afraid you'll fall for me too hard?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_102",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you ever thought about me before falling asleep? What did you think?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_103",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Is there something in your past you're afraid I'll find out?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_104",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "How have you been hurt in love before?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_105",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What makes it hard for you to trust someone completely?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_106",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "When did you last cry over love?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_107",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Are you keeping some distance from me because you're afraid of something?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_108",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "If we don't work out, what will you regret most?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_109",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you truly moved on from your ex?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_110",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have I ever hurt your feelings without you saying so?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_111",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "When you're in love, what do you fear most about yourself?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_112",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you ever loved someone who didn't love you back?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_113",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you ever cheated or been cheated on? How did you get through it?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_114",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What about me makes you want to be a better person?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_115",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Is there something you'd like me to change but feel shy to say?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_116",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Out of ten, how would you rate me right now, and why?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_117",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you get jealous when you see me close to someone else?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_118",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What would make you walk away immediately?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_119",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you ever lied to me about anything?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_120",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What about you do you think still makes me hesitate?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_121",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you want me to become your official partner?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_122",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "How would you ask me to be together?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_123",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "How long does it take you to be sure of your feelings?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_124",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you ever thought about stopping things with me? Why?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_125",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Are you getting to know anyone else at the same time?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_126",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "When would you like to meet my family?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_127",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What about your family do you hope I'll understand and accept?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_128",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What have you never told anyone but want to tell me?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_129",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "When do you feel most vulnerable?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_130",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "When you go quiet, what do you need me to do?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_131",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you ever typed a message to me and deleted it? What did it say?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_132",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you ever opened my photos and looked at them again and again?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_133",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "When did you feel I truly understood you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_134",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What are you most afraid I'll discover about you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_135",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you believe I'd stay when you're at your worst?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_136",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What promise would you like to hear from me?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_137",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you ever dreamed about me? What was the dream?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_138",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "To you, how long before things should become official?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_139",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Would you be willing to do long distance with me?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_140",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "If you could tell me the most honest thing, what would it be?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_141",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Which part of my face do you find most attractive?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_142",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you ever imagined kissing me?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_143",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What was your very first kiss like?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_144",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Where do you most like to be kissed: lips, cheek, forehead, or neck?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_145",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you prefer gentle kisses or passionate ones?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_146",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "When did you first want to kiss me?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_147",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What do I wear that makes me most attractive to you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_148",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Which of my gestures makes your heart race?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_149",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you like being hugged from behind?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_150",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you prefer interlaced fingers or holding the whole hand?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_151",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Which scent of mine makes you miss me?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_152",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you feel shy showing affection in public?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_153",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Where do you most like to be touched gently?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_154",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What makes you feel safe being close to someone?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_155",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "When you're just getting to know someone, where are your limits?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_156",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you ever wanted to hug me but held back?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_157",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What do you think about kissing on a first date?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_158",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "When is my voice most captivating to you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_159",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Which pet name would you like me to call you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_160",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "How would you like a private evening with me to go?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_161",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you get shy when I look at you for too long?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_162",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "When did you feel the two of us were closest?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_163",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Would you rather be comforted with a hug or a kiss?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_164",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Where would you like me to take more initiative?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_165",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Would you rather be complimented on your looks or your personality?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_166",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you ever secretly watched me when I wasn't paying attention?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_167",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What do you think of my lips?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_168",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you prefer a tight hug or a long one?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_169",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you like resting your head on my shoulder?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_170",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What about me makes you want to stay a little closer?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_171",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you like sweet messages at midnight?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_172",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Where would you like our first kiss to happen?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_173",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What do you think is your most attractive feature?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_174",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you ever lost sleep thinking about me?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_175",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Which affectionate gesture makes you feel most cherished?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_176",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you like it when I stroke your hair?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_177",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "How would you react if I kissed you by surprise?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_178",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Would you like me to hold your hand when we walk down the street?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_179",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you believe in the feeling of \"the right person\" when you touch?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_180",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What about me is hardest for you to resist?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_181",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Would you rather be kissed on the cheek or the forehead? Why?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_182",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you like sitting close to me while watching a film?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_183",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "When do you most want to hug me?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_184",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What would you like to hear me whisper in your ear?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_185",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you like it when I gaze at you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_186",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you think I'm a good kisser?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_187",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Which romantic mood do you like most: candlelight, rain, or a starry night?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_188",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What makes you shyest when you're close to me?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_189",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Would you like to fall asleep in my arms once?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_190",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you prefer surprise touches or being told first?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_191",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Have you ever wanted to hold my hand but didn't dare?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_192",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "When do I look most alluring to you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_193",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you prefer a good-morning kiss or a good-night kiss?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_194",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Would you like our next kiss to last longer?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_195",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Do you think we're ready for our first kiss?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_196",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "What makes you hold back when you want to get closer?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_197",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Would you rather I take the lead, or would you rather lead?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_198",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "How do you feel when I sit really close to you?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_199",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "When it's just the two of us, what would you like me to do?",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "truth_en_200",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Right now, do you want to kiss me?",
+      "target": "current_player",
+      "enabled": true
+    }
+  ]
+}

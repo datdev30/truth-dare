@@ -1,0 +1,3605 @@
+{
+  "version": 4,
+  "cards": [
+    {
+      "id": "dare_vi_001",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Kể một chuyện xấu hổ nhưng buồn cười của bạn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_002",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bắt chước một biểu cảm quen thuộc của người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_003",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Đọc to tin nhắn gần nhất bạn gửi cho người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_004",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Cho người kia xem một bức ảnh hồi nhỏ của bạn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_005",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Hát một đoạn bài hát bạn thích nhất lúc này.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_006",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Kể một câu chuyện cười; nếu người kia không cười, kể thêm một câu nữa.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_007",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Cho người kia xem ba bức ảnh gần nhất trong điện thoại.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_008",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Diễn tả công việc của bạn bằng động tác, không nói, để người kia đoán.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_009",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Đặt cho người kia một biệt danh dễ thương và giải thích.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_010",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Nói một câu bằng giọng của vùng miền khác.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_011",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Bật bài hát bạn hay nghe nhất và kể vì sao bạn thích nó.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_012",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Nhảy một điệu bất kỳ trong 15 giây.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_013",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Cho người kia xem biểu tượng cảm xúc bạn dùng nhiều nhất.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_014",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Chụp một bức ảnh selfie thật hài hước cùng người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_015",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Kể ba điều thú vị về bản thân mà người kia chưa biết.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_016",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Vẽ chân dung người kia trong 30 giây.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_017",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Đoán món ăn yêu thích của người kia; nếu sai, kể một bí mật nhỏ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_018",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Giới thiệu người kia như một MC truyền hình trong 30 giây.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_019",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Để người kia chọn một ứng dụng trong điện thoại của bạn và mở ra.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_020",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Làm khuôn mặt hài hước nhất có thể và giữ trong 5 giây.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_021",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Khen người kia một điều bạn để ý từ lần đầu gặp.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_022",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Nói ba điều bạn thấy dễ mến ở người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_023",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Rót nước hoặc lấy đồ uống cho người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_024",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Gửi cho người kia một bài hát khiến bạn nghĩ đến họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_025",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Nhìn vào mắt người kia 10 giây và mỉm cười.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_026",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Khen giọng nói hoặc nụ cười của người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_027",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Hỏi người kia hôm nay thế nào và lắng nghe trọn vẹn, không ngắt lời.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_028",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Viết một lời chúc ngắn cho người kia lên giấy.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_029",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Nói \"cảm ơn vì hôm nay đã đến\" một cách chân thành.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_030",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Kể một điều người kia từng nói mà bạn vẫn nhớ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_031",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Gợi ý một món ăn bạn muốn mời người kia thử.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_032",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Nhắn cho người kia một tin chúc ngủ ngon ngay bây giờ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_033",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Khen cách ăn mặc của người kia hôm nay.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_034",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Nói một điều bạn thấy người kia làm rất tốt.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_035",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Mời người kia đi cà phê lần tới và chọn luôn địa điểm.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_036",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Kể một lần người kia khiến bạn bất ngờ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_037",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Giơ tay để người kia đập tay với bạn thật kêu.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_038",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Chọn một món ăn vặt để mời người kia ở lần gặp tới.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_039",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Nói cho người kia biết bạn thích điều gì nhất ở buổi gặp hôm nay.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_040",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "vi",
+      "content": "Khen người kia bằng tiếng Anh hoặc một ngôn ngữ khác.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_041",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Kể một kỷ niệm tuổi thơ mà bạn ít khi kể với ai.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_042",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Chia sẻ một mục tiêu bạn đang theo đuổi và lý do.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_043",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Kể về người có ảnh hưởng lớn nhất đến bạn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_044",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Chia sẻ một nỗi lo hiện tại của bạn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_045",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Kể về một lần bạn thất bại và cách bạn đứng dậy.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_046",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Cho người kia xem một bức ảnh có ý nghĩa với bạn và kể về nó.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_047",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Kể một điều bạn biết ơn trong tuần này.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_048",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Nói một điều bạn ước mình làm tốt hơn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_049",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Kể về một ngày bình thường của bạn, từ sáng đến tối.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_050",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Chia sẻ một quyết định khó bạn từng đưa ra.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_051",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Kể về một người bạn thân và vì sao bạn quý họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_052",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Kể điều bạn thích nhất ở gia đình mình.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_053",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Chia sẻ một điều bạn đang học hoặc muốn học.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_054",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Kể về nơi khiến bạn thấy bình yên nhất.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_055",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Chia sẻ một thói quen bạn muốn bỏ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_056",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Kể về một điều gần đây khiến bạn thay đổi suy nghĩ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_057",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Nói một điều bạn muốn người kia biết trước khi hiểu sâu hơn về bạn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_058",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Kể một ước mơ lớn mà bạn chưa từng nói ra.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_059",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Chia sẻ điều bạn sợ nhất khi bắt đầu một mối quan hệ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_060",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Hỏi người kia một câu bạn thật sự muốn biết và lắng nghe câu trả lời.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_061",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Cùng nhau chụp một bức ảnh tạo dáng giống hệt nhau.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_062",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Cùng lên kế hoạch cho một buổi đi chơi trong ba phút.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_063",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Mỗi người đoán món người kia sẽ gọi khi đi cà phê.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_064",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Cùng chọn một bộ phim để xem vào lần tới.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_065",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Cùng chơi oẳn tù tì ba ván, người thua kể một bí mật nhỏ.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_066",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Cùng đặt tên cho một quán ăn tưởng tượng của hai người.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_067",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Mỗi người nói một điều mình đoán về người kia; đoán đúng được một điểm.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_068",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Cùng lập danh sách năm nơi muốn đến.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_069",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Hai người cùng hát một bài mà cả hai đều thuộc.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_070",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Đọc một câu thoại phim lãng mạn bằng giọng thật nghiêm túc.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_071",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Cùng viết một câu chuyện, mỗi người một câu, trong một phút.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_072",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Thi nhìn nhau không chớp mắt; ai cười trước thì thua.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_073",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Cùng nghĩ ra một kiểu chào bí mật chỉ hai người biết.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_074",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Mỗi người chọn một bài hát cho người kia và cùng nghe.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_075",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Đoán ngày sinh hoặc cung hoàng đạo của người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_076",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Cùng chọn một món sẽ cùng nấu hoặc cùng ăn vào lần tới.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_077",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Kể lại lần gặp đầu tiên như một đoạn giới thiệu phim hành động.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_078",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Cùng nghĩ ra một từ riêng mà chỉ hai người hiểu.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_079",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Cùng chọn một thử thách nhỏ để làm trong tuần này, như đi bộ hay đọc sách.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_080",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "vi",
+      "content": "Mỗi người kể một điều thật và một điều bịa; người kia đoán.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_081",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nhìn vào mắt người kia 20 giây mà không nói gì.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_082",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nói thật lòng một điều bạn thích ở người kia mà chưa từng nói.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_083",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nếu người kia đồng ý, nắm tay họ trong 30 giây.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_084",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Viết cho người kia một tin nhắn thật lòng và gửi ngay.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_085",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nói cho người kia biết bạn cảm thấy thế nào khi ở cạnh họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_086",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Kể khoảnh khắc bạn bắt đầu để ý người kia nhiều hơn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_087",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nếu cả hai cùng thoải mái, ôm người kia một cái thật nhẹ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_088",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nói điều bạn mong chờ ở lần gặp tiếp theo.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_089",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Ngồi gần người kia hơn một chút cho đến hết lượt sau.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_090",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Hẹn người kia một buổi đi chơi cụ thể: ngày, giờ và địa điểm.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_091",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nói \"mình rất vui vì được quen bạn\" bằng ánh mắt chân thành.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_092",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nói cho người kia biết điều gì khiến bạn muốn tìm hiểu tiếp.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_093",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Chọn một bài hát nói đúng cảm xúc của bạn lúc này và bật lên.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_094",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Viết tên người kia lên lòng bàn tay mình và cho họ xem.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_095",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nói một điều bạn còn ngại nhưng muốn người kia biết.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_096",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nếu người kia đồng ý, tựa vai vào người kia trong một phút.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_097",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Hứa một điều nhỏ bạn sẽ làm cho người kia trong tuần này.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_098",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nói cho người kia biết bạn muốn hai người hiểu thêm điều gì về nhau.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_099",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nhìn người kia và hoàn thành câu: \"Mình thấy an tâm khi...\"",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_100",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "vi",
+      "content": "Nói thật lòng bạn mong hai người sẽ đi đến đâu.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_001",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Tell an embarrassing but funny story about yourself.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_002",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Imitate one of my familiar expressions.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_003",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Read aloud the last message you sent me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_004",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Show me a childhood photo of yourself.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_005",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Sing part of the song you love most right now.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_006",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Tell me a joke; if I don't laugh, tell another one.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_007",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Show me the three most recent photos on your phone.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_008",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Act out your job without words and let me guess.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_009",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Give me a cute nickname and explain it.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_010",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Say a sentence in a different regional accent.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_011",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Play the song you listen to most and tell me why you love it.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_012",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Dance any way you like for 15 seconds.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_013",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Show me the emoji you use most.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_014",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Take a really funny selfie with me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_015",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Tell me three interesting things about yourself that I don't know yet.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_016",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Draw my portrait in 30 seconds.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_017",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Guess my favourite food; if you're wrong, share a small secret.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_018",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Introduce me like a TV host for 30 seconds.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_019",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Let me pick an app on your phone for you to open.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_020",
+      "category": "funny",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Make the funniest face you can and hold it for 5 seconds.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_021",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Compliment something you noticed about me the first time we met.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_022",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Tell me three things you find likeable about me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_023",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Pour me some water or get me a drink.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_024",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Send me a song that makes you think of me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_025",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Look into my eyes for 10 seconds and smile.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_026",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Compliment my voice or my smile.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_027",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Ask how my day was and listen all the way through without interrupting.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_028",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Write me a short note of good wishes on paper.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_029",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Say \"thank you for coming today\" and mean it.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_030",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Tell me something I once said that you still remember.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_031",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Suggest a dish you'd like to treat me to.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_032",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Text me \"good night\" right now.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_033",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Compliment what I'm wearing today.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_034",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Tell me something you think I do really well.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_035",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Invite me for coffee next time and pick the place.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_036",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Tell me about a time I surprised you.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_037",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Hold up your hand for a loud high five.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_038",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Choose a snack to treat me to next time we meet.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_039",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Tell me what you enjoyed most about today.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_040",
+      "category": "romantic",
+      "difficulty": "easy",
+      "locale": "en",
+      "content": "Compliment me in English or another language.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_041",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Share a childhood memory you rarely tell anyone.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_042",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Share a goal you're chasing and why.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_043",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Tell me about the person who has influenced you most.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_044",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Share a worry you have right now.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_045",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Tell me about a time you failed and how you got back up.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_046",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Show me a photo that means a lot to you and tell its story.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_047",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Tell me one thing you're grateful for this week.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_048",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Name one thing you wish you did better.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_049",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Walk me through an ordinary day of yours, from morning to night.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_050",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Share a hard decision you once made.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_051",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Tell me about a close friend and why you treasure them.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_052",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Tell me what you love most about your family.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_053",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Share something you're learning or want to learn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_054",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Tell me about the place where you feel most at peace.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_055",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Share a habit you want to break.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_056",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Tell me about something that changed your mind recently.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_057",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Tell me one thing you want me to know before I get to know you more deeply.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_058",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Share a big dream you've never said out loud.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_059",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Share what scares you most about starting a relationship.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_060",
+      "category": "deep",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Ask me a question you really want answered, and listen to my answer.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_061",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Take a photo together striking exactly the same pose.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_062",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Plan an outing together in three minutes.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_063",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Each guess what the other would order at a café.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_064",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Choose a film together to watch next time.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_065",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Play three rounds of rock-paper-scissors; the loser shares a small secret.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_066",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Together, name an imaginary restaurant the two of you would run.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_067",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Each make one guess about the other; a correct guess scores a point.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_068",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Make a list together of five places you want to visit.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_069",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Sing a song you both know, together.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_070",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Read a line from a romance film in a dead-serious voice.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_071",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Write a story together, one sentence each, for one minute.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_072",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Have a staring contest; whoever laughs first loses.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_073",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Make up a secret greeting only the two of you know.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_074",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Each pick a song for the other and listen together.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_075",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Guess my birthday or my star sign.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_076",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Choose a dish to cook or eat together next time.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_077",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Retell our first meeting as an action-movie trailer.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_078",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Invent a word together that only the two of you understand.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_079",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Pick a small challenge together for this week, like walking or reading.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_080",
+      "category": "funny",
+      "difficulty": "medium",
+      "locale": "en",
+      "content": "Each tell one truth and one made-up story; the other guesses which is which.",
+      "target": "both",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_081",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Look into my eyes for 20 seconds without speaking.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_082",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Honestly tell me something you like about me that you've never said.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_083",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "If I'm okay with it, hold my hand for 30 seconds.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_084",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Write me a heartfelt message and send it now.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_085",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Tell me how you feel when you're next to me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_086",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Tell me the moment you started noticing me more.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_087",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "If we're both comfortable, give me a gentle hug.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_088",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Tell me what you're looking forward to at our next meetup.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_089",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Sit a little closer to me until the end of the next turn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_090",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Ask me out on a specific date: the day, the time, and the place.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_091",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Say \"I'm really glad I met you\" with sincere eyes.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_092",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Tell me what makes you want to keep getting to know me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_093",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Pick a song that matches how you feel right now and play it.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_094",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Write my name on your palm and show me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_095",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Tell me something you're still shy about but want me to know.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_096",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "If I'm okay with it, lean on my shoulder for one minute.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_097",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Promise one small thing you'll do for me this week.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_098",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Tell me what you'd like us to understand more about each other.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_099",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Look at me and finish the sentence: \"I feel at ease when...\"",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_100",
+      "category": "romantic",
+      "difficulty": "hard",
+      "locale": "en",
+      "content": "Honestly tell me where you hope the two of us are heading.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_101",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nhìn vào mắt người kia và nói điều bạn sợ nhất trong mối quan hệ này.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_102",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nhìn thẳng vào mắt người kia và nói thật lòng ba điều bạn thích ở họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_103",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Kể cho người kia một bí mật bạn chưa từng nói với ai.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_104",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Đọc to những tin nhắn đầu tiên hai người gửi cho nhau.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_105",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nói cho người kia biết bạn bắt đầu có cảm xúc từ lúc nào.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_106",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Viết một lời tỏ tình thật lòng và đọc lên.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_107",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nắm tay người kia và kể về một tổn thương cũ của bạn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_108",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nói một điều bạn muốn thay đổi ở mình vì người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_109",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nói \"mình thích bạn\" bằng giọng thật nghiêm túc.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_110",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Kể ngắn gọn và thật lòng về người cũ bạn từng yêu nhất.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_111",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hỏi người kia câu hỏi bạn ngại hỏi nhất từ trước tới giờ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_112",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nói cho người kia biết bạn muốn mối quan hệ này đi đến đâu.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_113",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Cho người kia xem đoạn chat bạn từng kể về họ với bạn bè.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_114",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Xin lỗi người kia vì một điều bạn từng làm khiến họ buồn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_115",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Kể điều bạn đã giấu người kia từ lúc quen nhau.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_116",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nhìn người kia 30 giây rồi nói điều đầu tiên bạn nghĩ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_117",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nói điều bạn mong người kia làm cho mình nhiều hơn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_118",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Kể lần gần nhất bạn ghen vì người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_119",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nói một điều bạn chưa dám đề nghị với người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_120",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hứa với người kia một điều nghiêm túc và giữ lời trong tháng này.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_121",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Kể khoảnh khắc bạn nghĩ \"mình muốn ở bên người này\".",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_122",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nói điều bạn sợ người kia nghĩ về mình.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_123",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Để người kia hỏi bạn ba câu bất kỳ, và trả lời thật lòng.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_124",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nói thẳng thắn về giới hạn gần gũi của bạn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_125",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Đặt tay người kia lên ngực mình để họ cảm nhận nhịp tim.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_126",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nói cho người kia biết bạn nhớ họ nhất vào lúc nào.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_127",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ghi âm một lời thật lòng và gửi cho người kia nghe sau.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_128",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Cho người kia đọc ghi chú hoặc nhật ký bạn viết về họ, nếu có.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_129",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Kể cho người kia nghe điều bạn mơ về hai người.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_130",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hỏi người kia: \"Bạn có muốn mình chính thức không?\" và chờ câu trả lời.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_131",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên má người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_132",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn thật dịu dàng lên trán người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_133",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên mu bàn tay người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_134",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nếu người kia đồng ý, hôn nhẹ lên môi họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_135",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nếu người kia đồng ý, hôn lên cổ họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_136",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên vai người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_137",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn vào lòng bàn tay người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_138",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên cổ tay người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_139",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên chóp mũi người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_140",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên mí mắt người kia khi họ nhắm mắt.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_141",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên tai người kia và thì thầm một lời ngọt ngào.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_142",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ôm người kia từ phía sau, tựa cằm lên vai họ trong một phút.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_143",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ôm người kia thật chặt trong 30 giây.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_144",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ngồi vào lòng người kia, hoặc để người kia ngồi vào lòng bạn, trong một phút.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_145",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Áp trán vào trán người kia và nhìn nhau 20 giây.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_146",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nếu người kia đồng ý, trao một nụ hôn môi dài 5 giây.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_147",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Thì thầm vào tai người kia điều bạn thích nhất ở họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_148",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Vuốt tóc người kia và nói một lời khen.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_149",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Đan tay với người kia và hôn lên từng ngón tay họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_150",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ôm eo người kia và nhảy chậm hết một bài.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_151",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Để người kia gối đầu lên đùi bạn đến hết lượt sau.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_152",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Xoa bóp vai cho người kia trong hai phút.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_153",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn má người kia ba lần thật nhanh.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_154",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nhắm mắt và để người kia hôn bạn ở bất kỳ đâu trên gương mặt.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_155",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Chạm ngón tay lên môi người kia rồi nói một câu ngọt ngào.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_156",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Cắn nhẹ vành tai người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_157",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ôm người kia và không buông cho đến khi họ bật cười.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_158",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên má người kia và giữ yên 5 giây.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_159",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nếu người kia đồng ý, hôn lên môi họ thật lâu.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_160",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Thổi nhẹ vào cổ người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_161",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nhìn môi người kia 10 giây rồi nhìn vào mắt họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_162",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Kéo người kia lại gần và thì thầm \"mình nhớ bạn\".",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_163",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn nhẹ lên gáy người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_164",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Để người kia chọn nơi bạn sẽ hôn: má, trán, tay hoặc môi.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_165",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nằm cạnh người kia, nắm tay và nhìn lên trần nhà một phút.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_166",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Dùng ngón tay vẽ một trái tim lên lưng người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_167",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ôm người kia và hôn lên tóc họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_168",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ngồi sát người kia, vai kề vai, đến hết hai lượt.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_169",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên má người kia và nói \"cảm ơn vì đã đến\".",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_170",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Chạm mũi mình vào mũi người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_171",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Đặt tay người kia lên má mình và nhắm mắt 10 giây.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_172",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên khóe môi người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_173",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nói \"mình muốn hôn bạn\" rồi chờ người kia trả lời.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_174",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nhắm mắt và tìm môi người kia bằng một nụ hôn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_175",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Để người kia hôn lên cổ bạn, nếu bạn đồng ý.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_176",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ôm người kia và đung đưa nhẹ như đang ru.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_177",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Đếm ngược từ 10 rồi trao người kia một nụ hôn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_178",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Đút cho người kia một miếng ăn rồi hôn lên má họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_179",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên một nốt ruồi hoặc vết sẹo trên tay người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_180",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ôm người kia và nói ba điều khiến bạn thương họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_181",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Vuốt nhẹ má người kia và giữ ánh mắt 15 giây.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_182",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên đầu ngón tay người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_183",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Kéo người kia vào lòng và ôm một phút không nói gì.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_184",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn người kia theo kiểu bạn thích nhất.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_185",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Để người kia tựa lưng vào lòng bạn và hôn lên tóc họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_186",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Thì thầm thật chậm tên người kia vào tai họ.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_187",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên má người kia, rồi lên trán, rồi lên tay.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_188",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nắm hai tay người kia và đặt một nụ hôn lên mỗi bàn tay.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_189",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ôm người kia, áp tai vào ngực họ để nghe nhịp tim.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_190",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên vai người kia và nói \"mình ở đây\".",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_191",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nếu người kia đồng ý, trao một nụ hôn môi thật dịu dàng.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_192",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên thái dương người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_193",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Để người kia chọn cho bạn một thử thách thân mật, trong giới hạn cả hai thoải mái.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_194",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ôm người kia thật lâu, đến khi một trong hai muốn buông.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_195",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn lên cằm người kia.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_196",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Đặt tay lên eo người kia và kéo họ lại gần.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_197",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Nằm cạnh người kia, đầu kề đầu, kể về nụ hôn bạn đang mong đợi.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_198",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Hôn người kia và nói \"mình thích bạn\".",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_199",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Ôm người kia, hôn lên má và chúc họ ngủ ngon.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_vi_200",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "vi",
+      "content": "Trao người kia một nụ hôn để kết thúc ván bài.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_101",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Look into my eyes and tell me what you fear most about this relationship.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_102",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Look straight into my eyes and honestly tell me three things you like about me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_103",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Tell me a secret you've never told anyone.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_104",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Read aloud the first messages we ever sent each other.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_105",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Tell me when you started having feelings for me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_106",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Write an honest confession and read it aloud.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_107",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Hold my hand and tell me about an old hurt of yours.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_108",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Name one thing you want to change about yourself because of me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_109",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Say \"I like you\" in a completely serious voice.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_110",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Briefly and honestly tell me about the ex you loved most.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_111",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Ask me the question you've always been shyest to ask.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_112",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Tell me where you want this relationship to go.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_113",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Show me a chat where you told your friends about me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_114",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Apologise for something you once did that made me sad.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_115",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Tell me something you've kept from me since we met.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_116",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Look at me for 30 seconds, then say the first thing on your mind.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_117",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Tell me what you'd like me to do for you more often.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_118",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Tell me about the last time you got jealous over me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_119",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Tell me something you haven't dared to suggest to me yet.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_120",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Make me one serious promise and keep it this month.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_121",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Tell me the moment you thought \"I want to be with this person.\"",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_122",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Tell me what you're afraid I think of you.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_123",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Let me ask you any three questions, and answer honestly.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_124",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Tell me your boundaries for closeness, openly and directly.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_125",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Put my hand on your chest so I can feel your heartbeat.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_126",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Tell me when you miss me most.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_127",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Record an honest message and send it for me to hear later.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_128",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Let me read a note or diary entry you wrote about me, if you have one.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_129",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Tell me what you dream about for the two of us.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_130",
+      "category": "deep",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Ask me \"Do you want us to make it official?\" and wait for my answer.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_131",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my cheek.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_132",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my forehead, very gently.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_133",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss the back of my hand.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_134",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "If I'm okay with it, kiss me softly on the lips.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_135",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "If I'm okay with it, kiss my neck.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_136",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my shoulder.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_137",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my palm.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_138",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my wrist.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_139",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss the tip of my nose.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_140",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my eyelids while my eyes are closed.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_141",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my ear and whisper something sweet.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_142",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Hug me from behind and rest your chin on my shoulder for one minute.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_143",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Hug me tightly for 30 seconds.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_144",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Sit on my lap, or let me sit on yours, for one minute.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_145",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Rest your forehead against mine and look at each other for 20 seconds.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_146",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "If I'm okay with it, give me a 5-second kiss on the lips.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_147",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Whisper in my ear what you like most about me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_148",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Stroke my hair and give me a compliment.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_149",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Lace your fingers with mine and kiss each of my fingers.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_150",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Hold my waist and slow dance with me to one song.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_151",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Let me rest my head on your lap until the end of the next turn.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_152",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Massage my shoulders for two minutes.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_153",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my cheek three times, quickly.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_154",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Close your eyes and let me kiss you anywhere on your face.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_155",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Touch my lips lightly with your finger, then say something sweet.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_156",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Gently nibble my earlobe.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_157",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Hug me and don't let go until I laugh.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_158",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my cheek and hold it there for 5 seconds.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_159",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "If I'm okay with it, give me a long kiss on the lips.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_160",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Blow softly on my neck.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_161",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Look at my lips for 10 seconds, then look into my eyes.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_162",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Pull me close and whisper \"I miss you.\"",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_163",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Gently kiss the back of my neck.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_164",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Let me choose where you'll kiss me: cheek, forehead, hand, or lips.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_165",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Lie next to me, hold my hand, and look at the ceiling for one minute.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_166",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Draw a heart on my back with your finger.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_167",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Hug me and kiss my hair.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_168",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Sit shoulder to shoulder with me until the end of two turns.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_169",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my cheek and say \"thank you for coming.\"",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_170",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Touch your nose to mine.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_171",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Hold my hand against your cheek and close your eyes for 10 seconds.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_172",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss the corner of my mouth.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_173",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Say \"I want to kiss you\" and wait for my answer.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_174",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Close your eyes and find my lips with a kiss.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_175",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Let me kiss your neck, if you're okay with it.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_176",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Hug me and sway gently, as if rocking me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_177",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Count down from 10, then give me a kiss.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_178",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Feed me a bite, then kiss my cheek.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_179",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss a mole or a scar on my hand or arm.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_180",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Hug me and tell me three things that make you care for me.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_181",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Gently stroke my cheek and hold my gaze for 15 seconds.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_182",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my fingertips.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_183",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Pull me into your arms and hold me for one minute without speaking.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_184",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss me the way you like best.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_185",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Let me lean back against you, and kiss my hair.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_186",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Whisper my name into my ear, very slowly.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_187",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my cheek, then my forehead, then my hand.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_188",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Hold both my hands and place a kiss on each one.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_189",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Hug me and press your ear to my chest to hear my heartbeat.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_190",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my shoulder and say \"I'm here.\"",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_191",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "If I'm okay with it, give me a very tender kiss on the lips.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_192",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my temple.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_193",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Let me choose an intimate dare for you, within what we're both comfortable with.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_194",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Hug me for as long as it takes until one of us wants to let go.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_195",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss my chin.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_196",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Put your hand on my waist and pull me closer.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_197",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Lie next to me, heads together, and tell me about the kiss you're hoping for.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_198",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Kiss me and say \"I like you.\"",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_199",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Hug me, kiss my cheek, and wish me good night.",
+      "target": "current_player",
+      "enabled": true
+    },
+    {
+      "id": "dare_en_200",
+      "category": "romantic",
+      "difficulty": "extreme",
+      "locale": "en",
+      "content": "Give me a kiss to end this round.",
+      "target": "current_player",
+      "enabled": true
+    }
+  ]
+}
