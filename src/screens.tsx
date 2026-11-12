@@ -832,7 +832,7 @@ export function Board({
       ) : (
         <div className="flex flex-1 flex-col justify-center">
           <Fan cards={session.deck} pickLabel={t.pickCard} enter={enter} onPick={(id) => side && onPick(id)} />
-          <div className="mt-8 flex flex-col items-center">
+          <div className="mt-20 flex flex-col items-center">
             <Dice
               face={face}
               turns={turns}

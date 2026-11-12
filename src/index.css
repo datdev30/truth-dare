@@ -63,23 +63,54 @@ button:disabled {
   animation: rise 0.48s cubic-bezier(0.16, 0.84, 0.32, 1);
 }
 
-.btn {
-  min-height: 3.1rem;
-  width: 100%;
+.btn,
+.quiet,
+.back,
+.round,
+.chip,
+.step,
+.pick,
+.face-btn,
+.lang button {
+  --press: 0.32rem;
+  --lip: #d56b8e;
   border: 0;
   border-radius: 999px;
-  background: linear-gradient(180deg, #ffffff 0%, #ffd6e4 48%, #f48aab 100%);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0) 42%),
+    linear-gradient(180deg, #fffefb 0%, #ffe4ef 100%);
+  box-shadow:
+    inset 0 1px 0 #fff,
+    0 var(--press) 0 var(--lip);
   color: var(--color-ink);
   font-weight: 600;
-  letter-spacing: 0.01em;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.85),
-    0 10px 24px rgba(228, 91, 134, 0.22);
-  transition: transform 0.16s ease, filter 0.16s ease;
+  margin-bottom: var(--press);
+  transform: translateY(0);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
 }
 
-.btn:active:not(:disabled) {
-  transform: translateY(1px) scale(0.985);
+.btn:active:not(:disabled),
+.quiet:active:not(:disabled),
+.back:active:not(:disabled),
+.round:active:not(:disabled),
+.chip:active:not(:disabled),
+.step:active:not(:disabled),
+.pick:active:not(:disabled),
+.face-btn:active:not(:disabled),
+.lang button:active:not(:disabled) {
+  transform: translateY(var(--press));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 0 0 var(--lip);
+}
+
+.btn {
+  --press: 0.46rem;
+  --lip: #c43162;
+  min-height: 3.25rem;
+  width: 100%;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0) 40%),
+    linear-gradient(180deg, #fff 0%, #ffd3e4 46%, #f48aab 100%);
+  font-weight: 700;
 }
 
 .face-actions {
@@ -92,23 +123,22 @@ button:disabled {
 }
 
 .quiet {
-  min-height: 2.75rem;
-  padding-inline: 0.5rem;
-  background: transparent;
-  color: var(--color-foam);
+  --press: 0.38rem;
+  --lip: #c45a80;
+  min-height: 2.9rem;
+  width: 100%;
+  padding-inline: 1rem;
 }
 
 .back {
+  --press: 0.22rem;
   display: inline-flex;
   align-items: center;
   align-self: flex-start;
   gap: 0.15rem;
-  min-height: 2.4rem;
-  padding: 0 0.9rem 0 0.55rem;
-  border: 1px solid rgba(196, 59, 102, 0.22);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.78);
-  color: var(--color-ink);
+  width: auto;
+  min-height: 2.55rem;
+  padding: 0 0.95rem 0 0.55rem;
 }
 
 .back svg {
@@ -116,18 +146,13 @@ button:disabled {
   height: 1.15rem;
 }
 
-.back:active {
-  transform: scale(0.96);
-}
-
 .round {
+  --press: 0.22rem;
   display: grid;
   place-items: center;
-  width: 2.6rem;
-  height: 2.6rem;
-  border: 1px solid rgba(196, 59, 102, 0.25);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-bottom: var(--press);
   color: #8d2348;
 }
 
@@ -136,40 +161,29 @@ button:disabled {
   height: 1.2rem;
 }
 
-.round:active {
-  transform: scale(0.94) rotate(-30deg);
-}
-
 .chip,
 .step {
   min-height: 3rem;
-  border-radius: 999px;
-  border: 1px solid rgba(196, 59, 102, 0.22);
-  background: rgba(255, 255, 255, 0.62);
-  color: var(--color-ink);
-  transition:
-    transform 0.16s ease,
-    background 0.2s ease,
-    border-color 0.2s ease,
-    color 0.2s ease;
+  padding-inline: 0.7rem;
 }
 
-.chip[aria-pressed="true"] {
-  border-color: rgba(196, 59, 102, 0.7);
-  background: linear-gradient(180deg, #ffffff, #ffd6e4);
-  color: #8d2348;
-}
-
-.chip:active:not(:disabled),
-.step:active:not(:disabled),
-.pick:active,
-.face-btn:active {
-  transform: scale(0.96);
+.chip[aria-pressed="true"],
+.pick[aria-pressed="true"],
+.face-btn[aria-pressed="true"],
+.lang button[aria-pressed="true"] {
+  --lip: #b42356;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 42%),
+    linear-gradient(180deg, #ffe9f2 0%, #ffb7d0 52%, #f278a4 100%);
+  color: #6d1838;
+  font-weight: 700;
 }
 
 .step {
   width: 3rem;
-  font-size: 1.4rem;
+  padding-inline: 0;
+  font-size: 1.45rem;
+  font-weight: 700;
 }
 
 .count-input {
@@ -200,23 +214,13 @@ button:disabled {
 }
 
 .pick {
+  --press: 0.3rem;
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  border-radius: 1.15rem;
-  border: 1px solid rgba(196, 59, 102, 0.16);
-  background: rgba(255, 255, 255, 0.55);
-  padding: 0.8rem 0.95rem;
+  border-radius: 1.2rem;
+  padding: 0.85rem 1rem;
   text-align: left;
-  transition:
-    transform 0.16s ease,
-    background 0.2s ease,
-    border-color 0.2s ease;
-}
-
-.pick[aria-pressed="true"] {
-  border-color: rgba(196, 59, 102, 0.45);
-  background: linear-gradient(180deg, #ffffff, #ffe8ef);
 }
 
 .mark {
@@ -228,47 +232,53 @@ button:disabled {
 }
 
 .tick {
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.85rem;
+  height: 0.85rem;
   flex: none;
   border-radius: 999px;
-  box-shadow: inset 0 0 0 1.5px rgba(196, 59, 102, 0.45);
-  transform: scale(0.7);
-  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), background 0.2s ease;
+  background: #fff;
+  box-shadow:
+    inset 0 1px 0 #fff,
+    0 0.14rem 0 #e7a8bf;
 }
 
 .pick[aria-pressed="true"] .tick {
-  background: var(--color-gold);
-  transform: scale(1);
+  background: #fff;
+  box-shadow:
+    inset 0 1px 0 #fff,
+    0 0.14rem 0 #9e224c;
 }
 
 .lang {
   display: flex;
   align-self: flex-end;
-  gap: 0.15rem;
-  padding: 0.2rem;
+  gap: 0.28rem;
+  padding: 0.32rem 0.32rem 0.68rem;
+  border: 0;
   border-radius: 999px;
-  border: 1px solid rgba(196, 59, 102, 0.25);
-  background: rgba(255, 255, 255, 0.72);
+  background: #ffd0e0;
+  box-shadow:
+    inset 0 0.22rem 0 #e7a0b8,
+    inset 0 -1px 0 #fff;
 }
 
 .lang button {
+  --press: 0.24rem;
+  --lip: #d989a8;
   min-width: 2.8rem;
-  min-height: 2.1rem;
-  border-radius: 999px;
-  background: transparent;
-  color: var(--color-mist);
+  min-height: 2.35rem;
+  margin-bottom: var(--press);
   font-size: 0.78rem;
   letter-spacing: 0.12em;
 }
 
-.lang button[aria-pressed="true"] {
-  background: linear-gradient(180deg, #ffffff, #ffd0e0);
-  color: #8d2348;
-}
-
 .card-art {
   position: relative;
+}
+
+.card-art.is-shining {
+  /* Clip to the painted card, not the transparent margin around the PNG. */
+  clip-path: inset(1.42% 2.4% 1.67% 2.2% round 7.6% / 4.9%);
 }
 
 .card-art-img {
@@ -282,24 +292,23 @@ button:disabled {
 .card-art.is-shining::after {
   content: "";
   position: absolute;
-  top: 8%;
-  bottom: 8%;
-  left: -30%;
-  width: 28%;
-  border-radius: 20%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.38), transparent);
-  transform: skewX(-16deg);
+  top: -20%;
+  bottom: -20%;
+  left: -22%;
+  width: 14%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.42), transparent);
+  transform: skewX(-18deg);
   animation: card-shine 6.5s ease-in-out infinite;
   pointer-events: none;
 }
 
 @keyframes card-shine {
   0%,
-  62% {
-    left: -40%;
+  58% {
+    left: -28%;
   }
   100% {
-    left: 120%;
+    left: 112%;
   }
 }
 
@@ -581,21 +590,13 @@ button:disabled {
 }
 
 .face-btn {
+  --press: 0.2rem;
   display: grid;
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 2.75rem;
+  height: 2.75rem;
   place-items: center;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  background: transparent;
+  margin-bottom: var(--press);
   font-size: 1.2rem;
-  transition: transform 0.16s ease, border-color 0.2s ease, background 0.2s ease;
-}
-
-.face-btn[aria-pressed="true"] {
-  border-color: #c43b66;
-  background: #ffe4ee;
-  transform: translateY(-2px);
 }
 
 .swap {
