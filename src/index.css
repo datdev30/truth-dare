@@ -632,7 +632,7 @@ button:disabled {
   position: relative;
   container-type: inline-size;
   width: min(100%, 23rem, max(17rem, (100dvh - 22rem) * 0.644));
-  aspect-ratio: 494 / 767;
+  aspect-ratio: 500 / 777;
   margin: 1.1rem auto 0;
   perspective: 1100px;
 }
@@ -686,7 +686,7 @@ button:disabled {
 }
 
 .flip .card-art-img {
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
