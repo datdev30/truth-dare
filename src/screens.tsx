@@ -448,16 +448,37 @@ function Reveal({
   );
   const card = pair[side];
   const cardRef = useRef<HTMLElement>(null);
-  const [tearing, setTearing] = useState(false);
+  const tossRef = useRef<HTMLDivElement>(null);
+  const [tossing, setTossing] = useState(false);
 
   function skip() {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       onResolve("skip", side);
       return;
     }
-    setTearing(true);
-    window.setTimeout(() => onResolve("skip", side), 1500);
+    setTossing(true);
   }
+
+  useEffect(() => {
+    if (!tossing) return;
+    const node = tossRef.current;
+    if (!node) return;
+    let settled = false;
+    const finish = () => {
+      if (settled) return;
+      settled = true;
+      onResolve("skip", side);
+    };
+    const onEnd = (event: AnimationEvent) => {
+      if (event.animationName === "ball-y") finish();
+    };
+    node.addEventListener("animationend", onEnd);
+    const backup = window.setTimeout(finish, 1700);
+    return () => {
+      node.removeEventListener("animationend", onEnd);
+      window.clearTimeout(backup);
+    };
+  }, [tossing, onResolve, side]);
 
   const front = (
     <CardArt face={side}>
@@ -492,14 +513,21 @@ function Reveal({
   }, [pair.id]);
 
   return (
-    <div className="mt-6 flex flex-1 flex-col">
-      {tearing ? (
-        <div className="flip is-tearing" aria-hidden="true">
-          <div className="tear-half tear-left">
-            <div className="tear-paper">{front}</div>
+    <div className="flex flex-1 flex-col">
+      {tossing ? (
+        <div ref={tossRef} className="flip is-tossing" aria-hidden="true">
+          <div className="bin">
+            <span className="bin-back" />
           </div>
-          <div className="tear-half tear-right">
-            <div className="tear-paper">{front}</div>
+          <div className="crumple">{front}</div>
+          <div className="ball-x">
+            <div className="ball-y">
+              <span className={`ball ball-${side}`} />
+            </div>
+          </div>
+          <div className="bin bin-front">
+            <span className="bin-lid" />
+            <span className="bin-rim" />
           </div>
         </div>
       ) : (
@@ -515,10 +543,10 @@ function Reveal({
         </div>
       )}
       <div className="face-actions ink mt-5 flex flex-col items-center gap-1">
-        <button type="button" className={primary} disabled={tearing} onClick={() => onResolve("done", side)}>
+        <button type="button" className={primary} disabled={tossing} onClick={() => onResolve("done", side)}>
           {t.done}
         </button>
-        <button type="button" className={quiet} disabled={tearing} onClick={skip}>
+        <button type="button" className={quiet} disabled={tossing} onClick={skip}>
           {t.skip}
         </button>
       </div>
@@ -526,15 +554,26 @@ function Reveal({
   );
 }
 
+function fanPlan(enter: boolean, reshuffle: boolean): { moves: Move[]; settle: number } {
+  if (enter) return { moves: ["riffle", Math.random() < 0.5 ? "overhand" : "wash"], settle: 700 };
+  if (reshuffle) {
+    const styles: Move[] = ["riffle", "overhand", "wash"];
+    return { moves: [styles[Math.floor(Math.random() * styles.length)]], settle: 500 };
+  }
+  return { moves: ["cut"], settle: 450 };
+}
+
 function Fan({
   cards,
   pickLabel,
   enter,
+  reshuffle,
   onPick,
 }: {
   cards: { id: string }[];
   pickLabel: string;
   enter: boolean;
+  reshuffle: boolean;
   onPick: (id: string) => void;
 }) {
   const start = fanMiddle(cards.length);
@@ -547,9 +586,7 @@ function Fan({
   const [dealing, setDealing] = useState(
     () => typeof window === "undefined" || !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
   );
-  const plan = useRef<{ moves: Move[]; settle: number }>(
-    enter ? { moves: ["riffle", Math.random() < 0.5 ? "overhand" : "wash"], settle: 700 } : { moves: ["cut"], settle: 450 },
-  );
+  const plan = useRef(fanPlan(enter, reshuffle));
   const anims = useRef<Animation[]>([]);
 
   function place(shift: number, lift: number, animate: boolean) {
@@ -774,6 +811,7 @@ export function Board({
 }) {
   const seen = useRef(false);
   const enter = !seen.current;
+  const afterSkip = useRef(false);
   useEffect(() => {
     seen.current = true;
   }, []);
@@ -803,23 +841,30 @@ export function Board({
   }
   return (
     <Shell>
-      {session.results.length === 0 && !active ? (
+      {active ? null : session.results.length === 0 ? (
         <BackButton label={t.back} onClick={onBack} />
       ) : (
         <span className="min-h-12" />
       )}
-      <div key={session.turn} className="swap">
-        <p className="text-sm text-mist" aria-live="polite">
-          {t.turn(player.name)}
-        </p>
-        <div className="flex items-baseline justify-between gap-3">
-          <h1 className="truncate font-display text-4xl">
-            <span aria-hidden="true">{player.avatar} </span>
-            {player.name}
-          </h1>
-          <p className="shrink-0 text-sm text-mist">{t.left(session.deck.length)}</p>
+      {active ? (
+        <h1 className="truncate font-display text-4xl">
+          <span aria-hidden="true">{player.avatar} </span>
+          {player.name}
+        </h1>
+      ) : (
+        <div key={session.turn} className="swap">
+          <p className="text-sm text-mist" aria-live="polite">
+            {t.turn(player.name)}
+          </p>
+          <div className="flex items-baseline justify-between gap-3">
+            <h1 className="truncate font-display text-4xl">
+              <span aria-hidden="true">{player.avatar} </span>
+              {player.name}
+            </h1>
+            <p className="shrink-0 text-sm text-mist">{t.left(session.deck.length)}</p>
+          </div>
         </div>
-      </div>
+      )}
       {active ? (
         <Reveal
           key={active.id}
@@ -827,11 +872,20 @@ export function Board({
           side={side ?? "truth"}
           session={session}
           t={t}
-          onResolve={onResolve}
+          onResolve={(action, choice) => {
+            afterSkip.current = action === "skip";
+            onResolve(action, choice);
+          }}
         />
       ) : (
         <div className="flex flex-1 flex-col justify-center">
-          <Fan cards={session.deck} pickLabel={t.pickCard} enter={enter} onPick={(id) => side && onPick(id)} />
+          <Fan
+            cards={session.deck}
+            pickLabel={t.pickCard}
+            enter={enter}
+            reshuffle={afterSkip.current}
+            onPick={(id) => side && onPick(id)}
+          />
           <div className="mt-20 flex flex-col items-center">
             <Dice
               face={face}

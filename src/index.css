@@ -276,11 +276,6 @@ button:disabled {
   position: relative;
 }
 
-.card-art.is-shining {
-  /* Clip to the painted card, not the transparent margin around the PNG. */
-  clip-path: inset(1.42% 2.4% 1.67% 2.2% round 7.6% / 4.9%);
-}
-
 .card-art-img {
   display: block;
   width: 100%;
@@ -289,26 +284,57 @@ button:disabled {
   user-select: none;
 }
 
+/* The card's own alpha is the mask, so the sweep stops at the painted rounded edge. */
+.card-art.is-shining {
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.card-art[data-face="back"].is-shining {
+  mask-image: url("/card-back.png");
+  -webkit-mask-image: url("/card-back.png");
+}
+
+.card-art[data-face="truth"].is-shining {
+  mask-image: url("/card-truth.png");
+  -webkit-mask-image: url("/card-truth.png");
+}
+
+.card-art[data-face="dare"].is-shining {
+  mask-image: url("/card-dare.png");
+  -webkit-mask-image: url("/card-dare.png");
+}
+
 .card-art.is-shining::after {
   content: "";
   position: absolute;
-  top: -20%;
-  bottom: -20%;
-  left: -22%;
-  width: 14%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.42), transparent);
-  transform: skewX(-18deg);
+  top: -10%;
+  bottom: -10%;
+  left: 0;
+  width: 40%;
+  background: linear-gradient(
+    108deg,
+    transparent 36%,
+    rgba(255, 255, 255, 0.16) 45%,
+    rgba(255, 255, 255, 0.48) 50%,
+    rgba(255, 255, 255, 0.16) 55%,
+    transparent 64%
+  );
+  transform: translate3d(-100%, 0, 0);
   animation: card-shine 6.5s ease-in-out infinite;
   pointer-events: none;
+  will-change: transform;
 }
 
 @keyframes card-shine {
   0%,
-  58% {
-    left: -28%;
+  62% {
+    transform: translate3d(-100%, 0, 0);
   }
   100% {
-    left: 112%;
+    transform: translate3d(250%, 0, 0);
   }
 }
 
@@ -632,9 +658,9 @@ button:disabled {
 .flip {
   position: relative;
   container-type: inline-size;
-  width: min(100%, 23rem, max(17rem, (100dvh - 22rem) * 0.644));
+  width: min(100%, 24rem, max(17rem, (100dvh - 16rem) * 0.644));
   aspect-ratio: 500 / 777;
-  margin: 1.1rem auto 0;
+  margin: 0 auto;
   perspective: 1100px;
 }
 
@@ -703,67 +729,267 @@ button:disabled {
   }
 }
 
-.tear-half {
+/* Toss timeline is 1.45s; keep every animated property on transform/opacity. */
+.crumple {
   position: absolute;
   inset: 0;
-  transform-origin: 50% 100%;
-  filter: drop-shadow(0 0 1.5px rgba(255, 255, 255, 0.95)) drop-shadow(0 6px 10px rgba(161, 45, 85, 0.18));
+  z-index: 2;
+  transform-origin: 50% 50%;
+  animation: crumple 1.45s ease-in both;
   will-change: transform, opacity;
 }
 
-.tear-paper {
+.crumple .card-art,
+.crumple .card-art-img {
   height: 100%;
 }
 
-.tear-left {
-  animation:
-    tear-rot-l 1.5s cubic-bezier(0.25, 0.1, 0.3, 1) forwards,
-    tear-fall-l 1.5s cubic-bezier(0.55, 0, 0.85, 0.45) forwards,
-    tear-fade 1.5s ease-in forwards;
+.crumple .ink {
+  animation: none;
 }
 
-.tear-right {
-  animation:
-    tear-rot-r 1.5s cubic-bezier(0.25, 0.1, 0.3, 1) forwards,
-    tear-fall-r 1.5s cubic-bezier(0.55, 0, 0.85, 0.45) forwards,
-    tear-fade 1.5s ease-in forwards;
+/* .flip is an inline-size container: 100cqw = card width, card height = 155.4cqw. */
+.ball-x,
+.ball-y {
+  position: absolute;
+  will-change: transform;
 }
 
-.tear-left .tear-paper {
-  clip-path: polygon(0 0, 52% 0, 47% 7%, 53% 14%, 48% 21%, 54% 29%, 46% 37%, 52% 45%, 47% 53%, 53% 61%, 45% 69%, 51% 77%, 47% 85%, 53% 93%, 49% 100%, 0 100%);
+.ball-x {
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 5rem;
+  height: 5rem;
+  margin: -2.5rem 0 0 -2.5rem;
+  animation: ball-x 1.45s linear both;
 }
 
-.tear-right .tear-paper {
-  clip-path: polygon(52% 0, 100% 0, 100% 100%, 49% 100%, 53% 93%, 47% 85%, 51% 77%, 45% 69%, 53% 61%, 47% 53%, 52% 45%, 46% 37%, 54% 29%, 48% 21%, 53% 14%, 47% 7%);
+.ball-y {
+  inset: 0;
+  animation: ball-y 1.45s both;
 }
 
-.flip.is-tearing::before {
-  animation: tear-shade 1.5s ease forwards;
+.ball {
+  position: absolute;
+  inset: 0;
+  border-radius: 42% 58% 47% 53% / 55% 41% 59% 45%;
+  background:
+    linear-gradient(128deg, transparent 0 33%, rgba(255, 255, 255, 0.7) 33.5% 35%, transparent 35.5% 100%),
+    linear-gradient(52deg, transparent 0 55%, rgba(60, 20, 40, 0.22) 55.5% 57%, transparent 57.5% 100%),
+    linear-gradient(170deg, transparent 0 63%, rgba(255, 255, 255, 0.55) 63.5% 65%, transparent 65.5% 100%),
+    linear-gradient(14deg, transparent 0 27%, rgba(60, 20, 40, 0.18) 27.5% 29%, transparent 29.5% 100%),
+    conic-gradient(
+      from 18deg at 44% 47%,
+      rgba(255, 255, 255, 0.42) 0 13%,
+      rgba(60, 20, 40, 0.1) 13% 25%,
+      rgba(255, 255, 255, 0.2) 25% 39%,
+      rgba(60, 20, 40, 0.2) 39% 52%,
+      rgba(255, 255, 255, 0.3) 52% 64%,
+      rgba(60, 20, 40, 0.08) 64% 79%,
+      rgba(255, 255, 255, 0.24) 79% 100%
+    ),
+    var(--paper);
+  box-shadow:
+    inset -0.4rem -0.5rem 0 rgba(60, 20, 40, 0.12),
+    inset 0.2rem 0.25rem 0 rgba(255, 255, 255, 0.5),
+    0 0.28rem 0 var(--paper-lip);
+  opacity: 0;
+  animation: ball 1.45s both;
+  will-change: transform, opacity;
 }
 
-@keyframes tear-rot-l {
-  to { rotate: -20deg; }
+.ball-truth {
+  --paper: linear-gradient(160deg, #cfe6ff 0%, #6ea7f7 55%, #3a6fd0 100%);
+  --paper-lip: #2a54a8;
 }
 
-@keyframes tear-rot-r {
-  to { rotate: 23deg; }
+.ball-dare {
+  --paper: linear-gradient(160deg, #ffd3df 0%, #f27596 55%, #cf3565 100%);
+  --paper-lip: #a02049;
 }
 
-@keyframes tear-fall-l {
-  to { translate: -56px 160px; }
+.bin {
+  position: absolute;
+  right: 6%;
+  bottom: 0;
+  width: 4.8rem;
+  height: 5.4rem;
+  transform-origin: 50% 100%;
+  animation: bin-pop 1.45s both;
+  will-change: transform, opacity;
 }
 
-@keyframes tear-fall-r {
-  to { translate: 62px 170px; }
+.bin-front {
+  z-index: 3;
+  pointer-events: none;
 }
 
-@keyframes tear-fade {
-  0%, 55% { opacity: 1; }
-  100% { opacity: 0; }
+.bin-back,
+.bin-lid,
+.bin-rim {
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
-@keyframes tear-shade {
-  to { opacity: 0; }
+.bin-back {
+  z-index: 1;
+  top: 0.95rem;
+  bottom: 0;
+  border-radius: 0.35rem 0.35rem 0.85rem 0.85rem;
+  background: linear-gradient(180deg, #ffd0e2 0%, #e56b94 100%);
+  clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
+}
+
+.bin-lid {
+  z-index: 4;
+  top: 0;
+  height: 0.85rem;
+  border-radius: 0.45rem 0.45rem 0.2rem 0.2rem;
+  background: linear-gradient(180deg, #fff 0%, #ffd3e4 100%);
+  box-shadow: inset 0 1px 0 #fff, 0 0.18rem 0 #e7a0b8;
+  transform-origin: 12% 70%;
+  animation: bin-lid 1.45s ease both;
+  will-change: transform;
+}
+
+.bin-rim {
+  z-index: 3;
+  top: 2.4rem;
+  bottom: 0;
+  border-radius: 0 0 0.85rem 0.85rem;
+  background:
+    linear-gradient(90deg, transparent 0 42%, rgba(255, 255, 255, 0.5) 42% 50%, transparent 50% 100%),
+    linear-gradient(180deg, #ffd6e6 0%, #f48aab 100%);
+  box-shadow: inset 0 1px 0 #fff, 0 0.35rem 0 #c43162;
+  clip-path: polygon(4% 0, 96% 0, 100% 100%, 0 100%);
+}
+
+.flip.is-tossing::before {
+  animation: toss-shade 0.45s ease forwards;
+}
+
+@keyframes crumple {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  8% {
+    transform: scale(1.03, 0.93) rotate(-3deg);
+  }
+  16% {
+    transform: scale(0.8, 0.86) rotate(5deg);
+  }
+  24% {
+    opacity: 1;
+    transform: scale(0.56, 0.48) rotate(-8deg);
+  }
+  31%,
+  100% {
+    opacity: 0;
+    transform: scale(0.22) rotate(14deg);
+  }
+}
+
+@keyframes ball {
+  0%,
+  20% {
+    opacity: 0;
+    transform: scale(0.3) rotate(0deg);
+  }
+  27% {
+    opacity: 1;
+    transform: scale(1.14, 0.9) rotate(18deg);
+  }
+  33% {
+    transform: scale(0.94, 1.06) rotate(30deg);
+  }
+  38% {
+    opacity: 1;
+    transform: scale(1) rotate(40deg);
+  }
+  86% {
+    opacity: 1;
+    transform: scale(0.6) rotate(420deg);
+  }
+  94%,
+  100% {
+    opacity: 0;
+    transform: scale(0.52) rotate(460deg);
+  }
+}
+
+@keyframes ball-x {
+  0%,
+  38% {
+    transform: translate3d(0, 0, 0);
+  }
+  78%,
+  100% {
+    transform: translate3d(calc(44cqw - 2.4rem), 0, 0);
+  }
+}
+
+@keyframes ball-y {
+  0%,
+  38% {
+    transform: translate3d(0, 0, 0);
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.35, 1);
+  }
+  54% {
+    transform: translate3d(0, -26cqw, 0);
+    animation-timing-function: cubic-bezier(0.55, 0, 0.9, 0.5);
+  }
+  88%,
+  100% {
+    transform: translate3d(0, calc(77.7cqw - 2.6rem), 0);
+  }
+}
+
+@keyframes bin-pop {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0) scale(0.7);
+  }
+  16% {
+    opacity: 1;
+    transform: translate3d(0, -3px, 0) scale(1.05);
+  }
+  24%,
+  86% {
+    opacity: 1;
+    transform: none;
+  }
+  91% {
+    transform: scale(1.07, 0.88);
+  }
+  97%,
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes bin-lid {
+  0%,
+  30% {
+    transform: rotate(0deg);
+  }
+  40%,
+  87% {
+    transform: rotate(-62deg);
+  }
+  95%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes toss-shade {
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes shade {
@@ -867,5 +1093,9 @@ button:disabled {
 
   .flip-inner.is-flipped {
     transform: rotateY(180deg);
+  }
+
+  .card-art.is-shining::after {
+    content: none;
   }
 }
