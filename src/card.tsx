@@ -8,22 +8,9 @@ const ART = {
 
 type Face = keyof typeof ART;
 
-export function CardArt({
-  face,
-  shine = false,
-  children,
-}: {
-  face: Face;
-  shine?: boolean;
-  children?: ReactNode;
-}) {
-  const moving =
-    shine &&
-    typeof window !== "undefined" &&
-    !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
+export function CardArt({ face, children }: { face: Face; children?: ReactNode }) {
   return (
-    <div className={moving ? "card-art is-shining" : "card-art"} data-face={face}>
+    <div className="card-art" data-face={face}>
       <img className="card-art-img" src={ART[face]} alt="" draggable={false} />
       {children ? <div className={face === "back" ? "card-art-seal" : "card-art-copy"}>{children}</div> : null}
     </div>

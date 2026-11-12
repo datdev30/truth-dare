@@ -284,60 +284,6 @@ button:disabled {
   user-select: none;
 }
 
-/* The card's own alpha is the mask, so the sweep stops at the painted rounded edge. */
-.card-art.is-shining {
-  mask-size: 100% 100%;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  -webkit-mask-repeat: no-repeat;
-}
-
-.card-art[data-face="back"].is-shining {
-  mask-image: url("/card-back.png");
-  -webkit-mask-image: url("/card-back.png");
-}
-
-.card-art[data-face="truth"].is-shining {
-  mask-image: url("/card-truth.png");
-  -webkit-mask-image: url("/card-truth.png");
-}
-
-.card-art[data-face="dare"].is-shining {
-  mask-image: url("/card-dare.png");
-  -webkit-mask-image: url("/card-dare.png");
-}
-
-.card-art.is-shining::after {
-  content: "";
-  position: absolute;
-  top: -10%;
-  bottom: -10%;
-  left: 0;
-  width: 40%;
-  background: linear-gradient(
-    108deg,
-    transparent 36%,
-    rgba(255, 255, 255, 0.16) 45%,
-    rgba(255, 255, 255, 0.48) 50%,
-    rgba(255, 255, 255, 0.16) 55%,
-    transparent 64%
-  );
-  transform: translate3d(-100%, 0, 0);
-  animation: card-shine 6.5s ease-in-out infinite;
-  pointer-events: none;
-  will-change: transform;
-}
-
-@keyframes card-shine {
-  0%,
-  62% {
-    transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-    transform: translate3d(250%, 0, 0);
-  }
-}
-
 .card-art-seal,
 .card-art-copy {
   position: absolute;
@@ -1093,9 +1039,5 @@ button:disabled {
 
   .flip-inner.is-flipped {
     transform: rotateY(180deg);
-  }
-
-  .card-art.is-shining::after {
-    content: none;
   }
 }

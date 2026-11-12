@@ -103,7 +103,7 @@ export function Home({
         <div className="flex flex-1 flex-col justify-center py-6">
           <div className="hero-card w-full">
             <h1 className="sr-only">Truth or Dare</h1>
-            <CardArt face="back" shine />
+            <CardArt face="back" />
           </div>
           {stale ? <p className="mt-6 text-center text-sm text-mist">{t.stale}</p> : null}
           <div className="mt-7 flex w-full flex-col items-center gap-1">
