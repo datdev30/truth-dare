@@ -143,7 +143,7 @@ export default function App() {
       <Shell>
         <div className="hero-card m-auto w-40">
           <CardArt face="back">
-            <p className="font-display text-2xl text-ink">{t.loading}</p>
+            <p className="text-sm font-semibold text-white">{t.loading}</p>
           </CardArt>
         </div>
       </Shell>

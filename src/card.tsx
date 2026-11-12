@@ -1,16 +1,237 @@
 import { useId, type ReactNode } from "react";
 
-const ARCH =
-  "M36 16H204A22 22 0 0 1 226 38V294A22 22 0 0 1 204 316H36A22 22 0 0 1 14 294V38A22 22 0 0 1 36 16Z";
-const FRAME =
-  "M46 28H194A16 16 0 0 1 210 44V282A16 16 0 0 1 194 298H46A16 16 0 0 1 30 282V44A16 16 0 0 1 46 28Z";
+const OUTER = "M26 6H214A20 20 0 0 1 234 26V306A20 20 0 0 1 214 326H26A20 20 0 0 1 6 306V26A20 20 0 0 1 26 6Z";
+const INNER = "M28 13H212A15 15 0 0 1 227 28V304A15 15 0 0 1 212 319H28A15 15 0 0 1 13 304V28A15 15 0 0 1 28 13Z";
+const SPARK = "M0 -6l1.6 4.4 4.4 1.6-4.4 1.6-1.6 4.4-1.6-4.4-4.4-1.6 4.4-1.6z";
+const DISPLAY = "'Baloo 2', 'Be Vietnam Pro', sans-serif";
+
+const RAYS = Array.from({ length: 18 }, (_, k) => {
+  const a = (k * 20 * Math.PI) / 180;
+  const b = ((k * 20 + 9) * Math.PI) / 180;
+  const p = (t: number) => `${(120 + 320 * Math.cos(t)).toFixed(1)} ${(166 + 320 * Math.sin(t)).toFixed(1)}`;
+  return `M120 166L${p(a)}L${p(b)}Z`;
+}).join("");
+
+const THEME = {
+  truth: {
+    edge: "#2b64cc",
+    ink: "#1c3477",
+    top: "#dcedff",
+    bottom: "#8cc0fb",
+    cloud: "#6aa4f2",
+    haze: "#bfdcff",
+    panel: "#fffaf2",
+    icon: "#3f8cff",
+  },
+  dare: {
+    edge: "#e04d78",
+    ink: "#a3173f",
+    top: "#ffe3ea",
+    bottom: "#ffa2bc",
+    cloud: "#ff83a6",
+    haze: "#ffc7d6",
+    panel: "#fffaf2",
+    icon: "#ffc83d",
+  },
+} as const;
+
+type Face = "back" | keyof typeof THEME;
+
+function Spark({ x, y, s = 1, fill = "#fff", opacity = 1 }: { x: number; y: number; s?: number; fill?: string; opacity?: number }) {
+  return <path d={SPARK} transform={`translate(${x} ${y}) scale(${s})`} fill={fill} opacity={opacity} />;
+}
+
+function Back({ id }: { id: string }) {
+  return (
+    <>
+      <defs>
+        <radialGradient id={`bg${id}`} cx="120" cy="166" r="190" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#9c6cf6" />
+          <stop offset="1" stopColor="#5a2cc0" />
+        </radialGradient>
+        <linearGradient id={`truth${id}`} x1="0" y1="118" x2="0" y2="156" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#a9e1ff" />
+          <stop offset="1" stopColor="#3f86ff" />
+        </linearGradient>
+        <linearGradient id={`dare${id}`} x1="0" y1="174" x2="0" y2="216" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#ffb3c8" />
+          <stop offset="1" stopColor="#ff3f78" />
+        </linearGradient>
+      </defs>
+      <path d={OUTER} fill="#2e1566" opacity="0.28" transform="translate(0 5)" />
+      <path d={OUTER} fill="#3b1c86" />
+      <path d={INNER} fill={`url(#bg${id})`} />
+      <g clipPath={`url(#clip${id})`}>
+        <path d={RAYS} fill="#fff" opacity="0.07" />
+      </g>
+      <path d={INNER} fill="none" stroke="#c7aaff" strokeOpacity="0.7" strokeWidth="1.5" />
+
+      <g fill="#ffd23f" stroke="#7a4a00" strokeWidth="2" strokeLinejoin="round">
+        <path d="M98 108L94 84L108 96L120 78L132 96L146 84L142 108Z" />
+        <rect x="97" y="106" width="46" height="8" rx="3" />
+      </g>
+      <circle cx="120" cy="76" r="3.4" fill="#ff6b98" stroke="#7a4a00" strokeWidth="1.5" />
+      <circle cx="93" cy="82" r="2.6" fill="#7cc8ff" stroke="#7a4a00" strokeWidth="1.3" />
+      <circle cx="147" cy="82" r="2.6" fill="#7cc8ff" stroke="#7a4a00" strokeWidth="1.3" />
+
+      <g fontFamily={DISPLAY} fontWeight="800" textAnchor="middle" paintOrder="stroke" strokeLinejoin="round">
+        <text x="120" y="153" fontSize="44" fill={`url(#truth${id})`} stroke="#1a2668" strokeWidth="7">
+          TRUTH
+        </text>
+        <rect x="104" y="158" width="32" height="18" rx="9" fill="#fff" stroke="#3b1c86" strokeWidth="2.5" />
+        <text x="120" y="172" fontSize="14" fill="#3b1c86">
+          OR
+        </text>
+        <text x="120" y="214" fontSize="48" fill={`url(#dare${id})`} stroke="#5a0f30" strokeWidth="7">
+          DARE
+        </text>
+      </g>
+      <path d="M84 232Q120 220 158 230" fill="none" stroke="#ffd23f" strokeWidth="4" strokeLinecap="round" />
+      <path d="M166 224l8-5M170 232l9-1" stroke="#ffd23f" strokeWidth="3" strokeLinecap="round" />
+      <path d="M72 96l-8-6M68 108l-10-1" stroke="#ffd23f" strokeWidth="3" strokeLinecap="round" />
+
+      <Spark x={58} y={66} s={1.1} fill="#ffb3d0" />
+      <Spark x={188} y={78} s={1.5} fill="#ffd23f" />
+      <Spark x={200} y={128} s={0.9} fill="#fff" opacity={0.85} />
+      <Spark x={46} y={180} s={1.4} fill="#ffd23f" />
+      <Spark x={194} y={246} s={1.1} fill="#ffb3d0" />
+      <Spark x={64} y={262} s={1} fill="#fff" opacity={0.8} />
+      <Spark x={150} y={286} s={0.8} fill="#ffb3d0" />
+    </>
+  );
+}
+
+function Megaphone({ x, y, flip, ink, body }: { x: number; y: number; flip: boolean; ink: string; body: string }) {
+  return (
+    <g transform={`translate(${x} ${y}) rotate(${flip ? 24 : -24}) scale(${flip ? -1 : 1} 1)`}>
+      <g stroke={ink} strokeWidth="2.2" strokeLinejoin="round">
+        <rect x="-14" y="-6" width="10" height="13" rx="3" fill="#fff" />
+        <path d="M-10 6L-7 17H-2L-4 6Z" fill="#fff" />
+        <path d="M-5 -7L18 -18V19L-5 8Z" fill={body} />
+        <ellipse cx="18" cy="0.5" rx="4" ry="18.5" fill="#fff" />
+      </g>
+      <g stroke="#ffc83d" strokeWidth="2.6" strokeLinecap="round">
+        <path d="M28 -14l7-5M30 1h9M28 15l7 5" />
+      </g>
+    </g>
+  );
+}
+
+function Front({ id, side }: { id: string; side: keyof typeof THEME }) {
+  const c = THEME[side];
+  const truth = side === "truth";
+  return (
+    <>
+      <defs>
+        <linearGradient id={`bg${id}`} x1="0" y1="13" x2="0" y2="319" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor={c.top} />
+          <stop offset="1" stopColor={c.bottom} />
+        </linearGradient>
+      </defs>
+      <path d={OUTER} fill={c.ink} opacity="0.22" transform="translate(0 5)" />
+      <path d={OUTER} fill={c.edge} />
+      <path d={INNER} fill={`url(#bg${id})`} />
+      <g clipPath={`url(#clip${id})`}>
+        <g fill="#fff" opacity="0.4">
+          <circle cx="30" cy="40" r="30" />
+          <circle cx="66" cy="22" r="22" />
+          <circle cx="206" cy="30" r="28" />
+          <circle cx="176" cy="18" r="18" />
+          <circle cx="22" cy="150" r="20" />
+          <circle cx="222" cy="170" r="24" />
+        </g>
+        <g fill={c.haze}>
+          <circle cx="20" cy="292" r="26" />
+          <circle cx="70" cy="300" r="24" />
+          <circle cx="124" cy="306" r="26" />
+          <circle cx="178" cy="298" r="24" />
+          <circle cx="226" cy="290" r="26" />
+        </g>
+        <g fill={c.cloud}>
+          <circle cx="8" cy="318" r="24" />
+          <circle cx="52" cy="326" r="24" />
+          <circle cx="100" cy="330" r="22" />
+          <circle cx="150" cy="328" r="24" />
+          <circle cx="198" cy="322" r="22" />
+          <circle cx="236" cy="314" r="22" />
+        </g>
+      </g>
+      <path d={INNER} fill="none" stroke="#fff" strokeOpacity="0.75" strokeWidth="1.5" />
+
+      <path d="M28 120H212A12 12 0 0 1 224 132V272A12 12 0 0 1 212 284H28A12 12 0 0 1 16 272V132A12 12 0 0 1 28 120Z" fill={c.ink} opacity="0.12" transform="translate(0 3)" />
+      <path d="M30 118H210A12 12 0 0 1 222 130V270A12 12 0 0 1 210 282H30A12 12 0 0 1 18 270V130A12 12 0 0 1 30 118Z" fill={c.panel} />
+
+      <path
+        d="M58 58H182A24 24 0 0 1 182 106H86L70 116L72 105A24 24 0 0 1 58 58Z"
+        fill={c.ink}
+        opacity="0.18"
+        transform="translate(0 4)"
+      />
+      <path
+        d="M58 58H182A24 24 0 0 1 182 106H86L70 116L72 105A24 24 0 0 1 58 58Z"
+        fill="#fff"
+        stroke={c.ink}
+        strokeWidth="2.6"
+        strokeLinejoin="round"
+      />
+      <text
+        x="120"
+        y="96"
+        textAnchor="middle"
+        fontFamily={DISPLAY}
+        fontWeight="800"
+        fontSize="36"
+        letterSpacing="1"
+        fill={c.ink}
+      >
+        {truth ? "TRUTH" : "DARE"}
+      </text>
+
+      {truth ? (
+        <text
+          x="122"
+          y="58"
+          textAnchor="middle"
+          fontFamily={DISPLAY}
+          fontWeight="800"
+          fontSize="50"
+          fill={c.icon}
+          stroke={c.ink}
+          strokeWidth="3.2"
+          paintOrder="stroke"
+          strokeLinejoin="round"
+        >
+          ?
+        </text>
+      ) : (
+        <path
+          d="M128 16L104 44H118L111 64L138 34H124L132 16Z"
+          fill={c.icon}
+          stroke={c.ink}
+          strokeWidth="2.6"
+          strokeLinejoin="round"
+        />
+      )}
+      <g stroke={truth ? "#ffb02e" : "#e04d78"} strokeWidth="3" strokeLinecap="round">
+        <path d="M54 42l6 8M66 34l3 9M44 54l8 4" />
+      </g>
+
+      <Spark x={34} y={30} s={0.9} />
+      <Spark x={196} y={44} s={1.3} fill="#ffd23f" />
+      <Spark x={210} y={86} s={0.8} />
+      <Spark x={30} y={98} s={0.8} fill={truth ? "#fff" : "#ffd23f"} />
+      {truth ? <Spark x={206} y={302} s={1.4} /> : <Spark x={40} y={300} s={1.3} fill="#ffd23f" />}
+      <Megaphone x={truth ? 38 : 202} y={300} flip={!truth} ink={c.ink} body={truth ? c.icon : "#ffc83d"} />
+    </>
+  );
+}
 
 export function CardArt({
   face,
   shine = false,
   children,
 }: {
-  face: "back" | "front";
+  face: Face;
   shine?: boolean;
   children?: ReactNode;
 }) {
@@ -21,51 +242,18 @@ export function CardArt({
     !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   return (
-    <div className="card-art">
+    <div className="card-art" data-face={face}>
       <svg className="card-art-svg" viewBox="0 0 240 332" aria-hidden="true">
         <defs>
-          <linearGradient id={`fill${id}`} x1="120" y1="14" x2="120" y2="318" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stopColor="#ffffff" />
-            <stop offset={face === "back" ? "0.52" : "0.74"} stopColor={face === "back" ? "#ffe4ee" : "#ffffff"} />
-            <stop offset="1" stopColor={face === "back" ? "#ffb7ce" : "#ffe4ee"} />
-          </linearGradient>
           <clipPath id={`clip${id}`}>
-            <path d={ARCH} />
+            <path d={INNER} />
           </clipPath>
         </defs>
-        <path d={ARCH} fill="#f3b4c8" opacity="0.55" transform="translate(0 8)" />
-        <path d={ARCH} fill={`url(#fill${id})`} />
-        <path d={FRAME} fill="none" stroke="#c43b66" strokeOpacity="0.4" strokeWidth="1.4" />
-        {face === "back" ? (
-          <>
-            <path
-              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-              transform="translate(75.6 116) scale(3.7)"
-              fill="#fff"
-              stroke="#e48aaa"
-              strokeWidth="0.5"
-            />
-            <ellipse cx="99" cy="166" rx="9" ry="5" fill="#ffb0c8" />
-            <ellipse cx="141" cy="166" rx="9" ry="5" fill="#ffb0c8" />
-            <circle cx="108" cy="150" r="6.4" fill="#a12d55" />
-            <circle cx="132" cy="150" r="6.4" fill="#a12d55" />
-            <circle cx="106" cy="147.4" r="2.3" fill="#fff" />
-            <circle cx="130" cy="147.4" r="2.3" fill="#fff" />
-            <circle cx="110.6" cy="151.8" r="1.05" fill="#fff" />
-            <circle cx="134.6" cy="151.8" r="1.05" fill="#fff" />
-            <path d="M110 167q10 9 20 0" fill="none" stroke="#c43b66" strokeWidth="1.8" strokeLinecap="round" />
-            <path d="M120 114C109 101 94 106 103 120C95 127 110 133 120 122Z" fill="#e45b86" />
-            <path d="M120 114C131 101 146 106 137 120C145 127 130 133 120 122Z" fill="#f278a0" />
-            <circle cx="120" cy="118" r="3.8" fill="#c43b66" />
-            <circle cx="118.8" cy="116.6" r="1.15" fill="#fff" opacity="0.8" />
-            <path d="M52 108l2.4 6 6 2.4-6 2.4-2.4 6-2.4-6-6-2.4 6-2.4z" fill="#fff" />
-            <path d="M188 136l1.7 4.4 4.4 1.7-4.4 1.7-1.7 4.4-1.7-4.4-4.4-1.7 4.4-1.7z" fill="#fff" opacity="0.9" />
-          </>
-        ) : null}
+        {face === "back" ? <Back id={id} /> : <Front id={id} side={face} />}
         {moving ? (
           <g clipPath={`url(#clip${id})`}>
-            <rect x="-70" y="0" width="36" height="332" fill="white" opacity="0.45">
-              <animate attributeName="x" values="-70;260" dur="6.5s" repeatCount="indefinite" />
+            <rect x="-70" y="0" width="36" height="332" fill="white" opacity="0.3" transform="skewX(-12)">
+              <animate attributeName="x" values="-70;320" dur="6.5s" repeatCount="indefinite" />
             </rect>
           </g>
         ) : null}
@@ -114,55 +302,6 @@ export function CategoryMark({ id }: { id: string }) {
           <circle cx="16" cy="10.8" r="1.5" fill="#c43b66" />
         </>
       )}
-    </svg>
-  );
-}
-
-const SPARK = "M0 -6l1.6 4.4 4.4 1.6-4.4 1.6-1.6 4.4-1.6-4.4-4.4-1.6 4.4-1.6z";
-
-export function SideMark({ side, label }: { side: "truth" | "dare"; label: string }) {
-  const id = useId().replace(/:/g, "");
-  const [light, deep, fold] = side === "truth" ? ["#f27aa1", "#c43b66", "#9e2a52"] : ["#7a3d63", "#3d2430", "#24131c"];
-  return (
-    <svg className="side-mark" viewBox="0 0 200 58" role="img" aria-label={label}>
-      <defs>
-        <linearGradient id={`band${id}`} x1="0" y1="6" x2="0" y2="44" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor={light} />
-          <stop offset="1" stopColor={deep} />
-        </linearGradient>
-      </defs>
-      <path d="M2 20H40V52H2L13 36Z" fill={deep} />
-      <path d="M198 20H160V52H198L187 36Z" fill={deep} />
-      <path d="M28 44H40V52Z" fill={fold} />
-      <path d="M172 44H160V52Z" fill={fold} />
-      <rect x="22" y="9" width="156" height="38" rx="9" fill={fold} opacity="0.35" />
-      <rect x="22" y="6" width="156" height="38" rx="9" fill={`url(#band${id})`} />
-      <rect
-        x="27.5"
-        y="11.5"
-        width="145"
-        height="27"
-        rx="5.5"
-        fill="none"
-        stroke="#fff"
-        strokeOpacity="0.55"
-        strokeWidth="1"
-        strokeDasharray="3 2.5"
-      />
-      <path d={SPARK} transform="translate(38 25)" fill="#fff" opacity="0.9" />
-      <path d={SPARK} transform="translate(162 25)" fill="#fff" opacity="0.9" />
-      <text
-        x="101.5"
-        y="32.5"
-        textAnchor="middle"
-        fill="#fff"
-        fontFamily="Fraunces, Georgia, serif"
-        fontWeight="700"
-        fontSize="20"
-        letterSpacing="3"
-      >
-        {side === "truth" ? "TRUTH" : "DARE"}
-      </text>
     </svg>
   );
 }

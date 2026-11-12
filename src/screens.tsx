@@ -1,8 +1,8 @@
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type Dispatch, type PointerEvent, type ReactNode, type SetStateAction } from "react";
-import { CardArt, CategoryMark, SeatMark, SideMark } from "./card";
+import { CardArt, CategoryMark, SeatMark } from "./card";
 import { avatars, type Copy } from "./copy";
 import { diceSide, rollDie, type Pair, type Player, type Session } from "./game";
-import { fanMiddle, fanPose, fanStep } from "./fan";
+import { fanMiddle, fanPose, fanStep, shuffleTrack, type Move } from "./fan";
 import type { HistoryEntry } from "./history";
 import type { Card, CardType, Category, Difficulty, Locale } from "./schema";
 
@@ -102,13 +102,8 @@ export function Home({
         </div>
         <div className="flex flex-1 flex-col justify-center py-6">
           <div className="hero-card w-full">
-            <CardArt face="back" shine>
-              <h1 className="font-display text-[1.55rem] leading-none text-[#a12d55]">
-                Truth
-                <span className="mt-1 block font-sans text-[0.62rem] tracking-[0.28em]">OR</span>
-                Dare
-              </h1>
-            </CardArt>
+            <h1 className="sr-only">Truth or Dare</h1>
+            <CardArt face="back" shine />
           </div>
           {stale ? <p className="mt-6 text-center text-sm text-mist">{t.stale}</p> : null}
           <div className="mt-7 flex w-full flex-col items-center gap-1">
@@ -465,13 +460,12 @@ function Reveal({
   }
 
   const front = (
-    <CardArt face="front">
-      <div className="ink pair is-single">
-        <SideMark side={side} label={t[side]} />
-        <div className="pair-option">
-          <span className="pair-text font-display">{card.content}</span>
-        </div>
-        <span className="text-center text-xs text-[#5c5168]">{audience(card, session, t)}</span>
+    <CardArt face={side}>
+      <div className="ink card-copy">
+        <span className="sr-only">{t[side]}</span>
+        <p className="card-question">{card.content}</p>
+        <span className="card-rule" aria-hidden="true" />
+        <span className="card-note">{audience(card, session, t)}</span>
       </div>
     </CardArt>
   );
@@ -550,12 +544,13 @@ function Fan({
   const cardsRef = useRef(cards);
   cardsRef.current = cards;
   const gesture = useRef<{ x: number; y: number; axis: "x" | "y" | null; dx: number; dy: number } | null>(null);
-  const [shuffle, setShuffle] = useState<"all" | "riffle" | "overhand" | "wash" | null>(() => {
-    if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return null;
-    if (enter) return "all";
-    const kinds = ["riffle", "overhand", "wash"] as const;
-    return kinds[Math.floor(Math.random() * kinds.length)];
-  });
+  const [dealing, setDealing] = useState(
+    () => typeof window === "undefined" || !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+  );
+  const plan = useRef<{ moves: Move[]; settle: number }>(
+    enter ? { moves: ["riffle", Math.random() < 0.5 ? "overhand" : "wash"], settle: 700 } : { moves: ["cut"], settle: 450 },
+  );
+  const anims = useRef<Animation[]>([]);
 
   function place(shift: number, lift: number, animate: boolean) {
     const el = fanRef.current;
@@ -577,28 +572,43 @@ function Fan({
   }
 
   useLayoutEffect(() => {
-    fanRef.current?.style.setProperty("--n", String(cardsRef.current.length));
     settle(indexRef.current);
   }, [cards.length]);
 
-  useEffect(() => {
-    if (!shuffle) return;
-    const last = fanRef.current?.querySelector<HTMLElement>(".fan-card:last-child");
-    if (!last) return;
-    const stop = () => setShuffle(null);
-    const onEnd = (event: AnimationEvent) => {
-      if (!event.animationName.startsWith("shuffle-")) return;
-      stop();
-    };
-    last.addEventListener("animationend", onEnd);
-    const timer = window.setTimeout(stop, shuffle === "all" ? 6000 : 2500);
+  useLayoutEffect(() => {
+    const el = fanRef.current;
+    if (!dealing || !el) return;
+    const n = cardsRef.current.length;
+    const { moves, settle: settleMs } = plan.current;
+    const list: Animation[] = [];
+    for (const card of el.children as HTMLCollectionOf<HTMLElement>) {
+      const d = Number(card.dataset.i) - indexRef.current;
+      if (Math.abs(d) >= 9) continue;
+      const { keyframes, duration } = shuffleTrack(moves, Number(card.dataset.i), n, fanPose(d).transform, settleMs);
+      list.push(card.animate(keyframes, { duration }));
+    }
+    anims.current = list;
+    let live = true;
+    Promise.all(list.map((anim) => anim.finished)).then(
+      () => live && setDealing(false),
+      () => {},
+    );
     return () => {
-      last.removeEventListener("animationend", onEnd);
-      window.clearTimeout(timer);
+      live = false;
+      for (const anim of list) anim.cancel();
+      anims.current = [];
     };
-  }, [shuffle]);
+  }, [dealing]);
+
+  function hurry() {
+    for (const anim of anims.current) anim.updatePlaybackRate(6);
+  }
 
   function onPointerDown(event: PointerEvent<HTMLDivElement>) {
+    if (dealing) {
+      hurry();
+      return;
+    }
     gesture.current = { x: event.clientX, y: event.clientY, axis: null, dx: 0, dy: 0 };
     event.currentTarget.setPointerCapture(event.pointerId);
     event.currentTarget.classList.add("is-drag");
@@ -641,13 +651,15 @@ function Fan({
   return (
     <div
       ref={fanRef}
-      className={shuffle ? `fan is-dealing shuffle-${shuffle}` : "fan"}
+      className="fan"
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
       onPointerCancel={onPointerUp}
       onKeyDown={(event) => {
-        if (event.key === "ArrowRight") {
+        if (dealing) {
+          hurry();
+        } else if (event.key === "ArrowRight") {
           event.preventDefault();
           settle(indexRef.current + 1);
         } else if (event.key === "ArrowLeft") {
@@ -673,7 +685,7 @@ function Fan({
             className="fan-card"
             aria-current={i === index ? "true" : undefined}
             aria-label={i === index ? `${pickLabel} ${i + 1}` : undefined}
-            style={{ "--i": i, ...fanPose(i - index) } as CSSProperties}
+            style={fanPose(i - index) as CSSProperties}
           >
             <CardArt face="back" />
           </button>
