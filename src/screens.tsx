@@ -853,16 +853,10 @@ export function Board({
         </h1>
       ) : (
         <div key={session.turn} className="swap">
-          <p className="text-sm text-mist" aria-live="polite">
-            {t.turn(player.name)}
-          </p>
-          <div className="flex items-baseline justify-between gap-3">
-            <h1 className="truncate font-display text-4xl">
-              <span aria-hidden="true">{player.avatar} </span>
-              {player.name}
-            </h1>
-            <p className="shrink-0 text-sm text-mist">{t.left(session.deck.length)}</p>
-          </div>
+          <h1 className="truncate font-display text-4xl">
+            <span aria-hidden="true">{player.avatar} </span>
+            {player.name}
+          </h1>
         </div>
       )}
       {active ? (
