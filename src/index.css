@@ -83,7 +83,7 @@ button:disabled {
 }
 
 .face-actions {
-  width: min(100%, 23rem, max(17rem, (100dvh - 22rem) * 0.723));
+  width: min(100%, 23rem, max(17rem, (100dvh - 22rem) * 0.644));
   margin-inline: auto;
 }
 
@@ -271,10 +271,36 @@ button:disabled {
   position: relative;
 }
 
-.card-art-svg {
+.card-art-img {
   display: block;
   width: 100%;
   height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+.card-art.is-shining::after {
+  content: "";
+  position: absolute;
+  top: 8%;
+  bottom: 8%;
+  left: -30%;
+  width: 28%;
+  border-radius: 20%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.38), transparent);
+  transform: skewX(-16deg);
+  animation: card-shine 6.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes card-shine {
+  0%,
+  62% {
+    left: -40%;
+  }
+  100% {
+    left: 120%;
+  }
 }
 
 .card-art-seal,
@@ -292,24 +318,26 @@ button:disabled {
 }
 
 .card-art-copy {
-  top: 35.5%;
-  right: 7.5%;
-  bottom: 15%;
-  left: 7.5%;
+  top: 43%;
+  right: 15%;
+  bottom: 20%;
+  left: 15%;
   overflow: hidden;
   pointer-events: auto;
 }
 
 .card-art[data-face="truth"] {
-  --card-ink: #1c3477;
-  --card-line: #8cc0fb;
+  --card-ink: #1c2c69;
+  --card-line: #9ec6f5;
   --card-star: #3f8cff;
+  --card-panel: #fef6ed;
 }
 
 .card-art[data-face="dare"] {
-  --card-ink: #a3173f;
-  --card-line: #ffa2bc;
-  --card-star: #ff5d8a;
+  --card-ink: #6a1430;
+  --card-line: #f3a8bf;
+  --card-star: #e23b6a;
+  --card-panel: #fef2ef;
 }
 
 .card-copy {
@@ -317,7 +345,7 @@ button:disabled {
   height: 100%;
   flex-direction: column;
   align-items: center;
-  padding: 5cqi 6cqi 4cqi;
+  padding: 2.5cqi 4cqi 1.5cqi;
   color: var(--card-ink);
   text-align: center;
 }
@@ -329,9 +357,9 @@ button:disabled {
   align-items: center;
   margin: 0;
   font-family: "Baloo 2", var(--font-sans);
-  font-size: min(1.5rem, 6.8cqi);
+  font-size: min(1.35rem, 5.6cqi);
   font-weight: 600;
-  line-height: 1.25;
+  line-height: 1.2;
   overflow-wrap: anywhere;
 }
 
@@ -351,7 +379,7 @@ button:disabled {
   left: 50%;
   padding: 0 1.6cqi;
   transform: translate(-50%, -54%);
-  background: #fffaf2;
+  background: var(--card-panel, #fffaf2);
   color: var(--card-star);
   font-size: min(0.95rem, 4.4cqi);
   line-height: 1;
@@ -603,8 +631,8 @@ button:disabled {
 .flip {
   position: relative;
   container-type: inline-size;
-  width: min(100%, 23rem, max(17rem, (100dvh - 22rem) * 0.723));
-  aspect-ratio: 240 / 332;
+  width: min(100%, 23rem, max(17rem, (100dvh - 22rem) * 0.644));
+  aspect-ratio: 494 / 767;
   margin: 1.1rem auto 0;
   perspective: 1100px;
 }
@@ -653,8 +681,13 @@ button:disabled {
 }
 
 .flip .card-art,
-.flip .card-art-svg {
+.flip .card-art-img {
   height: 100%;
+}
+
+.flip .card-art-img {
+  object-fit: cover;
+  object-position: center;
 }
 
 @keyframes turn {
